@@ -2,24 +2,32 @@
 export default {
   content: [
     "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
+    "./src/**/*.{js,ts,jsx,tsx,css}",
   ],
   theme: {
     extend: {
       colors: {
         brand: {
-          orange: '#f04a00',
-          hover: '#cc3f00',
+          primary: '#F04B4C',
+          hover: '#D93F40',
+          accent: '#F04B4C',
+        },
+        ui: {
+          bg: '#FFFFFF',
+          bgSec: '#F9FAFB',
+          textPrimary: '#2C2C2C',
+          textSec: '#5F6368',
         }
       },
       fontFamily: {
-        heading: ['Manrope', 'sans-serif'],
-        body: ['Inter', 'sans-serif'],
+        poppins: ['Poppins', 'sans-serif'],
+        inter: ['Inter', 'sans-serif'],
       },
       borderRadius: {
-        'xl': '20px',
+        'btn': '20px',
+        'card': '20px',
       }
-    },
+    }
   },
   plugins: [],
 }
