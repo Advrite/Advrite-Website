@@ -8,15 +8,15 @@ export default {
     extend: {
       colors: {
         brand: {
-          primary: '#F04B4C',
-          hover: '#D93F40',
-          accent: '#F04B4C',
+          primary: '#7A7AFF',
+          hover: '#31316B',
+          accent: '#7A7AFF',
         },
         ui: {
           bg: '#FFFFFF',
-          bgSec: '#F9FAFB',
-          textPrimary: '#2C2C2C',
-          textSec: '#5F6368',
+          bgSec: '#F5F5FF',
+          textPrimary: '#17172B',
+          textSec: '#666680',
         }
       },
       fontFamily: {
