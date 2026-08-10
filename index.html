@@ -60,15 +60,15 @@
                 extend: {
                     colors: {
                         brand: {
-                            primary: '#F04B4C',
-                            hover: '#D93F40',
-                            accent: '#F04B4C', // Advrite red
+                            primary: '#7A7AFF',
+                            hover: '#31316B',
+                            accent: '#7A7AFF', // Advrite primary
                         },
                         ui: {
                             bg: '#FFFFFF',
-                            bgSec: '#F9FAFB',
-                            textPrimary: '#2C2C2C',
-                            textSec: '#5F6368',
+                            bgSec: '#F5F5FF',
+                            textPrimary: '#17172B',
+                            textSec: '#666680',
                         }
                     },
                     fontFamily: {
@@ -84,12 +84,37 @@
         }
     </script>
     <style>
-        body { font-family: 'Inter', sans-serif; font-weight: 400; line-height: 1.7; background-color: #FFFFFF; color: #2C2C2C; }
+        body { font-family: 'Inter', sans-serif; font-weight: 400; line-height: 1.7; background-color: #FFFFFF; color: #17172B; }
         h1, h2, h3, h4, h5, h6 { font-family: 'Poppins', sans-serif; font-weight: 700; letter-spacing: -0.02em; }
         .btn-text, button[type="submit"] { font-family: 'Poppins', sans-serif; font-weight: 500; }
         nav a { font-family: 'Inter', sans-serif; font-weight: 500; }
         .shape-blob { animation: float 6s ease-in-out infinite; }
         @keyframes float { 0% { transform: translateY(0px); } 50% { transform: translateY(-15px); } 100% { transform: translateY(0px); } }
+        
+        /* Services Hover Effects */
+        @media (hover: hover) {
+            .service-card:hover {
+                transform: translateY(-5px);
+                background-color: #7A7AFF;
+                box-shadow: 0 15px 35px -10px rgba(122,122,255,0.35);
+            }
+
+            .service-card:hover .service-icon-wrapper {
+                transform: scale(1.08);
+            }
+            .service-card:hover .service-title {
+                color: #FFFFFF;
+            }
+            .service-card:hover .service-desc {
+                color: rgba(255, 255, 255, 0.85);
+            }
+        }
+        @media (prefers-reduced-motion: reduce) {
+            .service-card, .service-icon-wrapper, .service-title, .service-desc {
+                transition: none !important;
+                transform: none !important;
+            }
+        }
     </style>
 </head>
 <body class="antialiased selection:bg-brand-primary selection:text-white overflow-x-hidden">
@@ -194,47 +219,47 @@
             </div>
             
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-ui-bgSec p-6 sm:p-10 rounded-card transition-all duration-300 hover:bg-brand-primary/5">
-                    <div class="w-14 h-14 rounded-2xl bg-white flex items-center justify-center text-brand-primary mb-6">
+                <div class="service-card relative overflow-hidden bg-ui-bgSec p-6 sm:p-10 rounded-card transition-all duration-[350ms] ease-out">
+                    <div class="service-icon-wrapper w-14 h-14 rounded-2xl bg-white flex items-center justify-center text-brand-primary mb-6 relative z-10 transition-transform duration-[350ms] ease-out">
                         <i class="ph ph-desktop text-3xl"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-3 text-ui-textPrimary">Website Design</h3>
-                    <p class="text-ui-textSec">Modern, responsive, and high-converting websites built with purpose.</p>
+                    <h3 class="service-title text-xl font-bold mb-3 text-ui-textPrimary relative z-10 transition-colors duration-[350ms]">Website Design</h3>
+                    <p class="service-desc text-ui-textSec relative z-10 transition-colors duration-[350ms]">Modern, responsive, and high-converting websites built with purpose.</p>
                 </div>
-                <div class="bg-ui-bgSec p-6 sm:p-10 rounded-card transition-all duration-300 hover:bg-brand-primary/5">
-                    <div class="w-14 h-14 rounded-2xl bg-white flex items-center justify-center text-brand-primary mb-6">
+                <div class="service-card relative overflow-hidden bg-ui-bgSec p-6 sm:p-10 rounded-card transition-all duration-[350ms] ease-out">
+                    <div class="service-icon-wrapper w-14 h-14 rounded-2xl bg-white flex items-center justify-center text-brand-primary mb-6 relative z-10 transition-transform duration-[350ms] ease-out">
                         <i class="ph ph-bezier-curve text-3xl"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-3 text-ui-textPrimary">Graphic Design</h3>
-                    <p class="text-ui-textSec">Stunning visual identities, logos, and marketing materials.</p>
+                    <h3 class="service-title text-xl font-bold mb-3 text-ui-textPrimary relative z-10 transition-colors duration-[350ms]">Graphic Design</h3>
+                    <p class="service-desc text-ui-textSec relative z-10 transition-colors duration-[350ms]">Stunning visual identities, logos, and marketing materials.</p>
                 </div>
-                <div class="bg-ui-bgSec p-6 sm:p-10 rounded-card transition-all duration-300 hover:bg-brand-primary/5">
-                    <div class="w-14 h-14 rounded-2xl bg-white flex items-center justify-center text-brand-primary mb-6">
+                <div class="service-card relative overflow-hidden bg-ui-bgSec p-6 sm:p-10 rounded-card transition-all duration-[350ms] ease-out">
+                    <div class="service-icon-wrapper w-14 h-14 rounded-2xl bg-white flex items-center justify-center text-brand-primary mb-6 relative z-10 transition-transform duration-[350ms] ease-out">
                         <i class="ph ph-film-strip text-3xl"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-3 text-ui-textPrimary">Video Editing</h3>
-                    <p class="text-ui-textSec">Professional edits that tell your brand's unique story.</p>
+                    <h3 class="service-title text-xl font-bold mb-3 text-ui-textPrimary relative z-10 transition-colors duration-[350ms]">Video Editing</h3>
+                    <p class="service-desc text-ui-textSec relative z-10 transition-colors duration-[350ms]">Professional edits that tell your brand's unique story.</p>
                 </div>
-                <div class="bg-ui-bgSec p-6 sm:p-10 rounded-card transition-all duration-300 hover:bg-brand-primary/5">
-                    <div class="w-14 h-14 rounded-2xl bg-white flex items-center justify-center text-brand-primary mb-6">
+                <div class="service-card relative overflow-hidden bg-ui-bgSec p-6 sm:p-10 rounded-card transition-all duration-[350ms] ease-out">
+                    <div class="service-icon-wrapper w-14 h-14 rounded-2xl bg-white flex items-center justify-center text-brand-primary mb-6 relative z-10 transition-transform duration-[350ms] ease-out">
                         <i class="ph ph-video-camera text-3xl"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-3 text-ui-textPrimary">Motion Graphics</h3>
-                    <p class="text-ui-textSec">Engaging vector animations that simplify complex ideas.</p>
+                    <h3 class="service-title text-xl font-bold mb-3 text-ui-textPrimary relative z-10 transition-colors duration-[350ms]">Motion Graphics</h3>
+                    <p class="service-desc text-ui-textSec relative z-10 transition-colors duration-[350ms]">Engaging vector animations that simplify complex ideas.</p>
                 </div>
-                <div class="bg-ui-bgSec p-6 sm:p-10 rounded-card transition-all duration-300 hover:bg-brand-primary/5">
-                    <div class="w-14 h-14 rounded-2xl bg-white flex items-center justify-center text-brand-primary mb-6">
+                <div class="service-card relative overflow-hidden bg-ui-bgSec p-6 sm:p-10 rounded-card transition-all duration-[350ms] ease-out">
+                    <div class="service-icon-wrapper w-14 h-14 rounded-2xl bg-white flex items-center justify-center text-brand-primary mb-6 relative z-10 transition-transform duration-[350ms] ease-out">
                         <i class="ph ph-megaphone text-3xl"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-3 text-ui-textPrimary">Digital Marketing</h3>
-                    <p class="text-ui-textSec">Data-driven strategies to reach and engage your audience.</p>
+                    <h3 class="service-title text-xl font-bold mb-3 text-ui-textPrimary relative z-10 transition-colors duration-[350ms]">Digital Marketing</h3>
+                    <p class="service-desc text-ui-textSec relative z-10 transition-colors duration-[350ms]">Data-driven strategies to reach and engage your audience.</p>
                 </div>
-                <div class="bg-ui-bgSec p-6 sm:p-10 rounded-card transition-all duration-300 hover:bg-brand-primary/5">
-                    <div class="w-14 h-14 rounded-2xl bg-white flex items-center justify-center text-brand-primary mb-6">
+                <div class="service-card relative overflow-hidden bg-ui-bgSec p-6 sm:p-10 rounded-card transition-all duration-[350ms] ease-out">
+                    <div class="service-icon-wrapper w-14 h-14 rounded-2xl bg-white flex items-center justify-center text-brand-primary mb-6 relative z-10 transition-transform duration-[350ms] ease-out">
                         <i class="ph ph-camera text-3xl"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-3 text-ui-textPrimary">Photography</h3>
-                    <p class="text-ui-textSec">High-quality visual content creation for your products.</p>
+                    <h3 class="service-title text-xl font-bold mb-3 text-ui-textPrimary relative z-10 transition-colors duration-[350ms]">Photography</h3>
+                    <p class="service-desc text-ui-textSec relative z-10 transition-colors duration-[350ms]">High-quality visual content creation for your products.</p>
                 </div>
             </div>
         </div>
@@ -378,7 +403,7 @@
                 <div class="flex flex-col gap-6 items-start">
                     <div class="h-10 flex items-center">
                         <a href="#" class="text-[32px] font-bold">
-                            <img src="assets/logo.svg" alt="Advrite Logo" loading="lazy" decoding="async" class="h-[32px] w-auto" />
+                            <img src="assets/logo.svg" alt="Advrite Logo" loading="lazy" decoding="async" class="h-[40px] w-auto" />
                         </a>
                     </div>
                     <p class="text-ui-textSec text-base font-medium">Branding • Creative Direction</p>
