@@ -1,4 +1,4 @@
-// Mobile Menu Logic
+﻿// Mobile Menu Logic
 const mobileMenuBtn = document.getElementById('mobile-menu-btn');
 const mobileMenuClose = document.getElementById('mobile-menu-close');
 const mobileMenu = document.getElementById('mobile-menu');
@@ -27,14 +27,14 @@ if (mobileMenuBtn && mobileMenuClose && mobileMenu) {
 
 // Contact Form Logic
 const contactForm = document.getElementById('contact-form');
-const successMessage = document.getElementById('success-message');
+const successMessage = document.getElementById('form-success');
 
 if (contactForm) {
     contactForm.addEventListener('submit', function(e) {
         e.preventDefault();
         const formData = new FormData(contactForm);
         
-        fetch('/', {
+        fetch(window.location.pathname, {
             method: 'POST',
             headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
             body: new URLSearchParams(formData).toString()
@@ -64,3 +64,4 @@ if (mainNav) {
         }
     });
 }
+
