@@ -1,0 +1,481 @@
+﻿<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO Master Tags -->
+    <title>Contact Us | Let's Build Something Iconic | Advrite</title>
+    <meta name="description" content="Ready to scale your brand? Contact Advrite to discuss Brand Identity, UI/UX, or Web Development. Book a discovery call today.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://advrite.com/contact" />
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://advrite.com/contact">
+    <meta property="og:title" content="Contact Us | Advrite">
+    <meta property="og:description" content="Ready to scale your brand? Contact Advrite to discuss Brand Identity, UI/UX, or Web Development. Book a discovery call today.">
+    <meta property="og:image" content="https://advrite.com/assets/og-image.jpg">
+    <meta property="og:site_name" content="Advrite">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Contact Us | Advrite">
+    <meta name="twitter:description" content="Book a discovery call today and scale your brand.">
+    <meta name="twitter:image" content="https://advrite.com/assets/og-image.jpg">
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "ContactPage",
+          "@id": "https://advrite.com/contact/#webpage",
+          "url": "https://advrite.com/contact",
+          "name": "Contact Advrite",
+          "isPartOf": {
+            "@id": "https://advrite.com/#website"
+          }
+        },
+        {
+          "@type": "LocalBusiness",
+          "name": "Advrite Studio",
+          "image": "https://advrite.com/assets/logo.svg",
+          "@id": "https://advrite.com",
+          "url": "https://advrite.com",
+          "telephone": "+917012008225",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Cyber Park Road",
+            "addressLocality": "Kozhikode",
+            "addressRegion": "KL",
+            "postalCode": "673016",
+            "addressCountry": "IN"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 11.255869,
+            "longitude": 75.719875
+          }
+        }
+      ]
+    }
+    </script>
+    
+    <!-- Preloads & Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web" defer></script>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: { primary: '#7A7AFF', hover: '#31316B', accentLav: '#B899ED', creativeYellow: '#FFFC00' },
+                        ui: { bg: '#FFFFFF', bgLightLav: '#F0F0FB', bgSoftLav: '#D2CFF2', textPrimary: '#161B2D', textSec: '#666680', textBlack: '#050609' }
+                    },
+                    fontFamily: { poppins: ['Poppins', 'sans-serif'], inter: ['Inter', 'sans-serif'] },
+                    borderRadius: { 'btn': '20px', 'card': '20px' }
+                }
+            }
+        }</script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body class="antialiased selection:bg-[#7A7AFF] selection:text-white overflow-x-hidden pt-24 bg-white">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-white/95 backdrop-blur-md z-50">
+        <div class="container mx-auto px-6 max-w-7xl h-24 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-2 lg:-ml-[5%]">
+                <img src="assets/logo.svg" alt="Advrite Logo" class="h-[61px]" />
+            </a>
+            <div class="hidden md:flex items-center gap-8 text-ui-textSec">
+                <a href="index.html" class="hover:text-[#7A7AFF] transition-colors duration-300">Home</a>
+                <a href="about.html" class="hover:text-[#7A7AFF] transition-colors duration-300">About</a>
+                <a href="services.html" class="hover:text-[#7A7AFF] transition-colors duration-300">Services</a>
+                <a href="portfolio.html" class="hover:text-[#7A7AFF] transition-colors duration-300">Portfolio</a>
+                <a href="contact.html" class="text-[#7A7AFF] font-medium transition-colors duration-300">Contact</a>
+            </div>
+            <div class="hidden md:block">
+                <a href="contact.html" class="bg-[#7A7AFF] text-white px-6 py-2.5 rounded-[20px] btn-text hover:bg-[#31316B] transition-colors duration-300 inline-block">
+                    Start a Project
+                </a>
+            </div>
+            <div class="md:hidden flex items-center">
+                <button id="mobile-menu-btn" class="text-ui-textPrimary hover:text-[#7A7AFF] p-2" aria-label="Open menu">
+                    <i class="ph ph-list text-3xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="fixed inset-0 bg-white z-40 hidden flex-col transition-opacity duration-300 opacity-0 pt-24 pb-8 px-6 overflow-y-auto">
+            <button id="mobile-menu-close" class="absolute top-8 right-6 text-ui-textPrimary p-2" aria-label="Close menu">
+                <i class="ph ph-x text-3xl"></i>
+            </button>
+            <div class="flex flex-col gap-4 text-2xl font-bold text-ui-textPrimary mt-8">
+                <a href="index.html" class="mobile-link hover:text-[#7A7AFF] transition-colors py-2">Home</a>
+                <a href="about.html" class="mobile-link hover:text-[#7A7AFF] transition-colors py-2">About</a>
+                <a href="services.html" class="mobile-link hover:text-[#7A7AFF] transition-colors py-2">Services</a>
+                <a href="portfolio.html" class="mobile-link hover:text-[#7A7AFF] transition-colors py-2">Portfolio</a>
+                <a href="contact.html" class="mobile-link text-[#7A7AFF] transition-colors py-2">Contact</a>
+                <a href="contact.html" class="mobile-link bg-[#7A7AFF] text-white px-8 py-4 rounded-[20px] btn-text hover:bg-[#31316B] hover:text-white transition-colors w-full text-center mt-6">
+                    Start a Project
+                </a>
+            </div>
+        </div>
+    </nav>
+
+        <main>
+        <!-- Contact Hero -->
+        <section class="relative pt-32 pb-16 lg:pt-40 lg:pb-24 bg-white overflow-hidden">
+            <div class="absolute right-0 top-0 w-[600px] h-[600px] bg-[#F0F0FB] rounded-full blur-[100px] opacity-70 pointer-events-none -z-10 transform translate-x-1/3 -translate-y-1/3"></div>
+            
+            <div class="container mx-auto px-6 max-w-7xl text-center relative z-10 animate-fade-in-up stagger-1">
+                <h4 class="text-sm font-bold tracking-widest uppercase text-[#7A7AFF] mb-6">Let's Work Together</h4>
+                <h1 class="text-[42px] md:text-[56px] font-bold text-ui-textPrimary mb-6 leading-[1.2] font-poppins">
+                    Have a project in <span class="relative inline-block">mind<span class="absolute -bottom-1 left-0 w-full h-1 bg-[#7A7AFF]/80 rounded-full"></span></span>?
+                </h1>
+                
+                <p class="text-xl text-ui-textSec leading-relaxed max-w-2xl mx-auto font-medium mb-10">
+                    Let's create something meaningful together.
+                </p>
+
+                <a href="#form-container" class="inline-flex items-center gap-2 bg-[#7A7AFF] text-white px-8 py-4 rounded-[20px] font-bold text-lg hover:bg-[#31316B] transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-[#7A7AFF]/30">
+                    <span>Start a Project &rarr;</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Project Enquiry & Form -->
+        <section id="form-container" class="py-16 lg:py-24 bg-white">
+            <div class="container mx-auto px-6 max-w-7xl">
+                <div class="flex flex-col lg:flex-row gap-12 lg:gap-12 justify-between">
+                    
+                    <!-- Left: Form Info -->
+                    <div class="lg:w-1/3 flex flex-col gap-8 animate-fade-in-up stagger-2 shrink-0 h-full">
+                        
+                        <!-- Get in touch -->
+                        <div>
+                            <h2 class="text-3xl md:text-4xl font-bold text-ui-textPrimary mb-8 font-poppins">Get in touch</h2>
+                            <div class="flex flex-col gap-6 text-ui-textPrimary font-medium">
+                                <a href="mailto:hello.advrite@gmail.com" class="flex items-center gap-4 hover:text-[#7A7AFF] transition-colors group">
+                                    <div class="w-12 h-12 rounded-full bg-white shadow-[0_4px_24px_rgb(0,0,0,0.04)] flex items-center justify-center text-[#7A7AFF] group-hover:-translate-y-1 transition-transform border border-gray-100">
+                                        <i class="ph ph-envelope-simple text-2xl"></i>
+                                    </div>
+                                    <span class="text-lg">hello.advrite@gmail.com</span>
+                                </a>
+                                <a href="tel:+917012008225" class="flex items-center gap-4 hover:text-[#7A7AFF] transition-colors group">
+                                    <div class="w-12 h-12 rounded-full bg-white shadow-[0_4px_24px_rgb(0,0,0,0.04)] flex items-center justify-center text-[#7A7AFF] group-hover:-translate-y-1 transition-transform border border-gray-100">
+                                        <i class="ph ph-phone text-2xl"></i>
+                                    </div>
+                                    <span class="text-lg">+91 70120 08225</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- What happens next? -->
+<div class="bg-white border border-gray-200/50 shadow-[0_4px_24px_rgb(0,0,0,0.02)] p-6 lg:p-8 rounded-[24px] mt-4 flex-1 flex flex-col justify-center">
+    <h4 class="text-[13px] font-bold tracking-[0.1em] uppercase text-ui-textPrimary mb-8">What happens next?</h4>
+    <div id="process-steps" class="space-y-6">
+        <!-- Step 1 -->
+        <div class="process-step flex gap-5 opacity-0 translate-y-2 transition-all duration-500 ease-out">
+            <div class="flex flex-col items-center">
+                <div class="process-circle w-8 h-8 rounded-full bg-[#F8F8FC] border border-gray-100 text-[#7A7AFF] flex items-center justify-center text-sm font-bold z-10 transition-colors duration-500">1</div>
+                <div class="w-[1px] h-10 bg-gray-100 -mb-6 mt-1 relative overflow-hidden"><div class="process-line absolute top-0 left-0 w-full h-full bg-[#7A7AFF] origin-top scale-y-0 transition-transform duration-700 ease-out"></div></div>
+            </div>
+            <div class="pb-2 pt-0.5">
+                <h5 class="text-[16px] font-bold text-ui-textPrimary mb-1">Review</h5>
+                <p class="text-[14px] text-ui-textSec font-medium">We review your details within 24 hours.</p>
+            </div>
+        </div>
+        <!-- Step 2 -->
+        <div class="process-step flex gap-5 opacity-0 translate-y-2 transition-all duration-500 ease-out">
+            <div class="flex flex-col items-center">
+                <div class="process-circle w-8 h-8 rounded-full bg-[#F8F8FC] border border-gray-100 text-[#7A7AFF] flex items-center justify-center text-sm font-bold z-10 transition-colors duration-500">2</div>
+                <div class="w-[1px] h-10 bg-gray-100 -mb-6 mt-1 relative overflow-hidden"><div class="process-line absolute top-0 left-0 w-full h-full bg-[#7A7AFF] origin-top scale-y-0 transition-transform duration-700 ease-out"></div></div>
+            </div>
+            <div class="pb-2 pt-0.5">
+                <h5 class="text-[16px] font-bold text-ui-textPrimary mb-1">Discovery</h5>
+                <p class="text-[14px] text-ui-textSec font-medium">We schedule a call to align on goals.</p>
+            </div>
+        </div>
+        <!-- Step 3 -->
+        <div class="process-step flex gap-5 opacity-0 translate-y-2 transition-all duration-500 ease-out">
+            <div class="flex flex-col items-center">
+                <div class="process-circle w-8 h-8 rounded-full bg-[#F8F8FC] border border-gray-100 text-[#7A7AFF] flex items-center justify-center text-sm font-bold z-10 transition-colors duration-500 shadow-sm">3</div>
+            </div>
+            <div class="pt-0.5">
+                <h5 class="text-[16px] font-bold text-ui-textPrimary mb-1">Proposal</h5>
+                <p class="text-[14px] text-ui-textSec font-medium">We present a customized proposal and timeline.</p>
+            </div>
+        </div>
+    </div>
+</div>
+                      </div>
+
+                      <!-- Right: Form -->                      <div class="lg:w-[600px] lg:ml-auto lg:mr-4 xl:mr-6 bg-white border border-gray-200/50 shadow-[0_4px_24px_rgb(0,0,0,0.02)] p-6 lg:p-8 rounded-[24px] relative overflow-hidden animate-fade-in-up stagger-3 shrink-0">
+                        <!-- Success State -->
+                        <div id="form-success" class="hidden absolute inset-0 bg-white z-20 flex flex-col items-center justify-center text-center px-8">
+                            <div class="w-20 h-20 bg-green-50 rounded-full flex items-center justify-center text-green-500 mb-6">
+                                <i class="ph-bold ph-check text-4xl"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold text-ui-textPrimary mb-3 font-poppins">Message Sent!</h3>
+                            <p class="text-ui-textSec max-w-sm font-medium">Thank you for reaching out. We've received your project details and will get back to you within 24 hours.</p>
+                            <button onclick="document.getElementById('form-success').classList.add('hidden')" class="mt-8 text-[#7A7AFF] font-semibold hover:underline">
+                                Send another message
+                            </button>
+                        </div>
+
+                        <div>
+                            <h3 class="text-2xl font-bold text-ui-textPrimary mb-5 font-poppins">Enquiry Form</h3>
+                            <form id="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="flex flex-col gap-3">
+                                <input type="hidden" name="form-name" value="contact" />
+                                <p class="hidden">
+                                    <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+                                </p>
+
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-3 w-full">
+                                    <div class="w-full">
+                                        <label for="name" class="block text-xs font-semibold text-ui-textPrimary mb-1 uppercase tracking-wide">Full Name <span class="text-[#7A7AFF]">*</span></label>
+                                        <input type="text" id="name" name="name" required class="w-full h-11 px-4 rounded-[12px] bg-[#F8F8FC] border border-transparent focus:bg-white focus:outline-none focus:border-[#7A7AFF] focus:ring-2 focus:ring-[#7A7AFF]/20 transition-all text-ui-textPrimary text-sm placeholder:text-gray-400" placeholder="John Doe">
+                                    </div>
+                                    <div class="w-full">
+                                        <label for="email" class="block text-xs font-semibold text-ui-textPrimary mb-1 uppercase tracking-wide">Email Address <span class="text-[#7A7AFF]">*</span></label>
+                                        <input type="email" id="email" name="email" required class="w-full h-11 px-4 rounded-[12px] bg-[#F8F8FC] border border-transparent focus:bg-white focus:outline-none focus:border-[#7A7AFF] focus:ring-2 focus:ring-[#7A7AFF]/20 transition-all text-ui-textPrimary text-sm placeholder:text-gray-400" placeholder="john@company.com">
+                                    </div>
+                                </div>
+                                
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-3 w-full">
+                                    <div class="w-full">
+                                        <label for="phone" class="block text-xs font-semibold text-ui-textPrimary mb-1 uppercase tracking-wide">Phone / WhatsApp</label>
+                                        <input type="tel" id="phone" name="phone" class="w-full h-11 px-4 rounded-[12px] bg-[#F8F8FC] border border-transparent focus:bg-white focus:outline-none focus:border-[#7A7AFF] focus:ring-2 focus:ring-[#7A7AFF]/20 transition-all text-ui-textPrimary text-sm placeholder:text-gray-400" placeholder="+91 98765 43210">
+                                    </div>
+                                    <div class="w-full">
+                                        <label for="company" class="block text-xs font-semibold text-ui-textPrimary mb-1 uppercase tracking-wide">Company / Brand</label>
+                                        <input type="text" id="company" name="company" class="w-full h-11 px-4 rounded-[12px] bg-[#F8F8FC] border border-transparent focus:bg-white focus:outline-none focus:border-[#7A7AFF] focus:ring-2 focus:ring-[#7A7AFF]/20 transition-all text-ui-textPrimary text-sm placeholder:text-gray-400" placeholder="Your Brand Name">
+                                    </div>
+                                </div>
+                                
+                                <div class="w-full">
+                                    <label for="service" class="block text-xs font-semibold text-ui-textPrimary mb-1 uppercase tracking-wide">Service Needed</label>
+                                    <div class="relative w-full">
+                                        <select id="service" name="service" class="w-full h-11 px-4 rounded-[12px] bg-[#F8F8FC] border border-transparent focus:bg-white focus:outline-none focus:border-[#7A7AFF] focus:ring-2 focus:ring-[#7A7AFF]/20 transition-all text-ui-textPrimary text-sm appearance-none cursor-pointer">
+                                            <option value="branding">Branding</option>
+                                            <option value="graphic_design">Graphic Design</option>
+                                            <option value="website_design">Website Design</option>
+                                            <option value="video_editing">Video Editing</option>
+                                            <option value="motion_graphics">Motion Graphics</option>
+                                            <option value="digital_marketing">Digital Marketing</option>
+                                            <option value="photography_videography">Photography & Videography</option>
+                                            <option value="other">Other</option>
+                                        </select>
+                                        <i class="ph-bold ph-caret-down absolute right-4 top-1/2 transform -translate-y-1/2 text-ui-textSec pointer-events-none text-sm"></i>
+                                    </div>
+                                </div>
+
+                                <div class="w-full">
+                                    <label for="budget" class="block text-xs font-semibold text-ui-textPrimary mb-1 uppercase tracking-wide">Budget Range (INR)</label>
+                                                                        <div class="relative w-full">
+                                        <select id="budget" name="budget" class="w-full h-11 px-4 rounded-[12px] bg-[#F8F8FC] border border-transparent focus:bg-white focus:outline-none focus:border-[#7A7AFF] focus:ring-2 focus:ring-[#7A7AFF]/20 transition-all text-ui-textPrimary text-sm appearance-none cursor-pointer">
+                                            <option value="under_10k">Under ₹10,000</option>
+                                            <option value="10k_30k">₹10,000 – ₹30,000</option>
+                                            <option value="30k_50k">₹30,000 – ₹50,000</option>
+                                            <option value="over_50k">₹50,000+</option>
+                                        </select>
+                                        <i class="ph-bold ph-caret-down absolute right-4 top-1/2 transform -translate-y-1/2 text-ui-textSec pointer-events-none text-sm"></i>
+                                    </div>
+                                </div>
+
+                                <div class="w-full">
+                                    <label for="message" class="block text-xs font-semibold text-ui-textPrimary mb-1 uppercase tracking-wide">Project Details <span class="text-[#7A7AFF]">*</span></label>
+                                    <textarea id="message" name="message" required class="w-full h-[70px] py-4 px-5 rounded-[12px] bg-[#F8F8FC] border border-transparent focus:bg-white focus:outline-none focus:border-[#7A7AFF] focus:ring-2 focus:ring-[#7A7AFF]/20 transition-all text-ui-textPrimary text-sm resize-none placeholder:text-gray-400 block" placeholder="Tell us about your company, current challenges, and goals..."></textarea>
+                                </div>
+                                
+                                <div class="w-full pt-2">
+                                    <button type="submit" id="submit-btn" class="w-full h-12 bg-[#7A7AFF] text-white px-8 rounded-[12px] font-bold text-sm hover:bg-[#31316B] transition-all duration-300 flex items-center justify-center gap-2 shadow-[0_4px_14px_rgba(122,122,255,0.3)] hover:shadow-[0_6px_20px_rgba(122,122,255,0.4)] hover:-translate-y-0.5">
+                                        <span>Submit Project Inquiry</span>
+                                        <i class="ph ph-paper-plane-tilt text-lg"></i>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="pt-16 pb-8 bg-[#F8F8FC] text-ui-textPrimary border-t border-gray-100">
+        <div class="container mx-auto px-6 max-w-7xl">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-8">
+                <!-- Left: Brand -->
+                <div class="flex flex-col items-start">
+                    <a href="index.html" class="inline-block mb-6">
+                        <img src="assets/logo.svg" alt="Advrite Logo" loading="lazy" decoding="async" class="h-10 w-auto" />
+                    </a>
+                    <p class="text-lg font-bold text-ui-textPrimary mb-8">Creative &bull; Branding &bull; Digital</p>
+                    
+                    <div class="flex gap-6 text-2xl text-ui-textSec">
+                        <a href="#" class="hover:text-[#7A7AFF] hover:-translate-y-1 transition-all duration-300" aria-label="Instagram">
+                            <i class="ph ph-instagram-logo"></i>
+                        </a>
+                        <a href="#" class="hover:text-[#7A7AFF] hover:-translate-y-1 transition-all duration-300" aria-label="Behance">
+                            <i class="ph ph-behance-logo"></i>
+                        </a>
+                        <a href="#" class="hover:text-[#7A7AFF] hover:-translate-y-1 transition-all duration-300" aria-label="LinkedIn">
+                            <i class="ph ph-linkedin-logo"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Right: Quick Links -->
+                <div class="flex flex-col items-start w-full md:-mt-2 md:ml-[40%]">
+                    <h4 class="text-sm font-bold tracking-widest uppercase text-ui-textPrimary mb-6">QUICK LINKS</h4>
+                    
+                    <div class="flex flex-col w-full max-w-[320px]">
+                        <a href="about.html" class="flex justify-between items-center py-4 border-b border-gray-200 text-base font-medium text-ui-textSec hover:text-[#7A7AFF] transition-colors group">
+                            <span>About Us</span>
+                            <i class="ph ph-arrow-right text-[#7A7AFF] opacity-70 group-hover:opacity-100 group-hover:translate-x-1 transition-all"></i>
+                        </a>
+                        <a href="services.html" class="flex justify-between items-center py-4 border-b border-gray-200 text-base font-medium text-ui-textSec hover:text-[#7A7AFF] transition-colors group">
+                            <span>Services</span>
+                            <i class="ph ph-arrow-right text-[#7A7AFF] opacity-70 group-hover:opacity-100 group-hover:translate-x-1 transition-all"></i>
+                        </a>
+                        <a href="portfolio.html" class="flex justify-between items-center py-4 border-b border-gray-200 text-base font-medium text-ui-textSec hover:text-[#7A7AFF] transition-colors group">
+                            <span>Portfolio</span>
+                            <i class="ph ph-arrow-right text-[#7A7AFF] opacity-70 group-hover:opacity-100 group-hover:translate-x-1 transition-all"></i>
+                        </a>
+                        <a href="contact.html" class="flex justify-between items-center py-4 border-b border-gray-200 text-base font-medium text-ui-textSec hover:text-[#7A7AFF] transition-colors group">
+                            <span>Contact</span>
+                            <i class="ph ph-arrow-right text-[#7A7AFF] opacity-70 group-hover:opacity-100 group-hover:translate-x-1 transition-all"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-full h-px bg-gray-200 mb-6"></div>
+            <!-- Bottom Section -->
+            <div class="w-full text-center md:text-left">
+                <span class="text-lg md:text-xl font-bold"><span class="text-[#171A2B]">Let's create something</span> <span class="text-[#7A7AFF]">memorable.</span></span>
+            </div>
+            
+        </div>
+    </footer>
+
+    <!-- Copyright Bar -->
+    <div class="bg-[#050505] border-t border-[#222222] py-6">
+        <div class="container mx-auto px-6 max-w-7xl w-full flex flex-col md:flex-row justify-between items-center gap-4 text-sm font-medium text-gray-400">
+            <div class="text-center md:text-left">
+                <span>&copy; 2026 Advrite. All Rights Reserved.</span>
+            </div>
+            <div class="flex gap-8">
+                <a href="#" class="hover:text-white transition-colors duration-300">Privacy Policy</a>
+                <a href="#" class="hover:text-white transition-colors duration-300">Terms</a>
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+    
+<style>
+    @media (prefers-reduced-motion: reduce) {
+        .process-step { opacity: 1 !important; transform: none !important; }
+        .process-line { transform: scaleY(1) !important; }
+        .process-circle { transition: none !important; }
+    }
+    .process-step.active {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    .process-step.active .process-circle {
+        background-color: #7A7AFF;
+        color: white;
+        border-color: #7A7AFF;
+        box-shadow: 0 4px 14px rgba(122,122,255,0.3);
+    }
+    .process-step.active .process-line {
+        transform: scaleY(1);
+    }
+</style>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const steps = document.querySelectorAll(".process-step");
+        if(steps.length === 0) return;
+        
+        let currentStep = 0;
+        let isAnimating = false;
+        
+        const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+        if(prefersReducedMotion) {
+            steps.forEach(s => s.classList.add('active'));
+            return;
+        }
+
+        function runAnimation() {
+            // Reset
+            steps.forEach(s => {
+                s.classList.remove('active');
+            });
+            currentStep = 0;
+            
+            // Wait a moment after reset before starting
+            setTimeout(nextStep, 500);
+        }
+        
+        function nextStep() {
+            if (currentStep < steps.length) {
+                steps[currentStep].classList.add('active');
+                currentStep++;
+                // Wait for the line/fade to finish before next step
+                setTimeout(nextStep, 1000); 
+            } else {
+                // Done. Pause at the end before looping
+                setTimeout(runAnimation, 3000);
+            }
+        }
+        
+        // Start intersection observer to only animate when in view
+        const observer = new IntersectionObserver((entries) => {
+            if(entries[0].isIntersecting && !isAnimating) {
+                isAnimating = true;
+                runAnimation();
+            }
+        }, { threshold: 0.5 });
+        
+        observer.observe(document.getElementById("process-steps"));
+    });
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

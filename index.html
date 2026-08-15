@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
@@ -59,90 +59,44 @@
             theme: {
                 extend: {
                     colors: {
-                        brand: {
-                            primary: '#7A7AFF',
-                            hover: '#31316B',
-                            accent: '#7A7AFF', // Advrite primary
-                        },
-                        ui: {
-                            bg: '#FFFFFF',
-                            bgSec: '#F5F5FF',
-                            textPrimary: '#17172B',
-                            textSec: '#666680',
-                        }
+                        brand: { primary: '#7A7AFF', hover: '#31316B', accentLav: '#B899ED', creativeYellow: '#FFFC00' },
+                        ui: { bg: '#FFFFFF', bgLightLav: '#F0F0FB', bgSoftLav: '#D2CFF2', textPrimary: '#161B2D', textSec: '#666680', textBlack: '#050609' }
                     },
-                    fontFamily: {
-                        poppins: ['Poppins', 'sans-serif'],
-                        inter: ['Inter', 'sans-serif'],
-                    },
-                    borderRadius: {
-                        'btn': '20px',
-                        'card': '20px',
-                    }
+                    fontFamily: { poppins: ['Poppins', 'sans-serif'], inter: ['Inter', 'sans-serif'] },
+                    borderRadius: { 'btn': '20px', 'card': '20px' }
                 }
             }
         }
     </script>
-    <style>
-        body { font-family: 'Inter', sans-serif; font-weight: 400; line-height: 1.7; background-color: #FFFFFF; color: #17172B; }
-        h1, h2, h3, h4, h5, h6 { font-family: 'Poppins', sans-serif; font-weight: 700; letter-spacing: -0.02em; }
-        .btn-text, button[type="submit"] { font-family: 'Poppins', sans-serif; font-weight: 500; }
-        nav a { font-family: 'Inter', sans-serif; font-weight: 500; }
-        .shape-blob { animation: float 6s ease-in-out infinite; }
-        @keyframes float { 0% { transform: translateY(0px); } 50% { transform: translateY(-15px); } 100% { transform: translateY(0px); } }
-        
-        /* Services Hover Effects */
-        @media (hover: hover) {
-            .service-card:hover {
-                transform: translateY(-5px);
-                background-color: #7A7AFF;
-                box-shadow: 0 15px 35px -10px rgba(122,122,255,0.35);
-            }
-
-            .service-card:hover .service-icon-wrapper {
-                transform: scale(1.08);
-            }
-            .service-card:hover .service-title {
-                color: #FFFFFF;
-            }
-            .service-card:hover .service-desc {
-                color: rgba(255, 255, 255, 0.85);
-            }
-        }
-        @media (prefers-reduced-motion: reduce) {
-            .service-card, .service-icon-wrapper, .service-title, .service-desc {
-                transition: none !important;
-                transform: none !important;
-            }
-        }
-    </style>
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="antialiased selection:bg-brand-primary selection:text-white overflow-x-hidden">
 
     <!-- Navigation -->
-    <nav class="fixed top-0 w-full bg-white/95 backdrop-blur-md z-50">
-        <div class="container mx-auto px-6 h-24 flex justify-between items-center">
-            <a href="#" class="flex items-center gap-2">
-                <img src="assets/logo.svg" alt="Advrite Logo" class="h-16" />
+    <nav id="main-nav" class="fixed top-0 w-full bg-gradient-to-b from-black/70 to-transparent z-50 transition-all duration-300">
+        <div class="container mx-auto px-6 max-w-7xl h-24 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-2 lg:-ml-[5%]">
+                <img src="assets/logo-white.svg" alt="Advrite Logo" class="h-[61px]" />
             </a>
             
-            <div class="hidden md:flex items-center gap-8 text-ui-textSec">
-                <a href="#home" class="hover:text-brand-primary transition-colors duration-300">Home</a>
-                <a href="#services" class="hover:text-brand-primary transition-colors duration-300">Services</a>
-                <a href="#work" class="hover:text-brand-primary transition-colors duration-300">Work</a>
-                <a href="#process" class="hover:text-brand-primary transition-colors duration-300">Process</a>
-                <a href="#contact" class="hover:text-brand-primary transition-colors duration-300">Contact</a>
+            <div class="hidden md:flex items-center gap-8 text-gray-200">
+                <a href="index.html" class="hover:text-white transition-colors duration-300">Home</a>
+                <a href="about.html" class="hover:text-white transition-colors duration-300">About</a>
+                <a href="services.html" class="hover:text-white transition-colors duration-300">Services</a>
+                <a href="portfolio.html" class="hover:text-white transition-colors duration-300">Portfolio</a>
+                <a href="contact.html" class="hover:text-white transition-colors duration-300">Contact</a>
             </div>
             
             <div class="hidden md:block">
-                <a href="#contact" class="bg-brand-accent text-white px-6 py-2.5 rounded-btn btn-text hover:bg-brand-hover hover:text-white transition-colors duration-300 inline-block">
+                <a href="contact.html" class="bg-brand-primary text-white px-6 py-2.5 rounded-btn btn-text hover:bg-brand-hover transition-colors duration-300 inline-block shadow-md shadow-brand-primary/20">
                     Get a Quote
                 </a>
             </div>
 
             <!-- Mobile Menu Toggle -->
             <div class="md:hidden flex items-center">
-                <button id="mobile-menu-btn" class="text-ui-textPrimary hover:text-brand-primary p-2" aria-label="Open menu">
+                <button id="mobile-menu-btn" class="text-white hover:text-brand-primary p-2" aria-label="Open menu">
                     <i class="ph ph-list text-3xl"></i>
                 </button>
             </div>
@@ -154,12 +108,12 @@
                 <i class="ph ph-x text-3xl"></i>
             </button>
             <div class="flex flex-col items-center gap-6 text-xl text-ui-textSec w-full max-w-sm mt-8">
-                <a href="#home" class="mobile-link hover:text-brand-primary transition-colors py-2">Home</a>
-                <a href="#services" class="mobile-link hover:text-brand-primary transition-colors py-2">Services</a>
-                <a href="#work" class="mobile-link hover:text-brand-primary transition-colors py-2">Work</a>
-                <a href="#process" class="mobile-link hover:text-brand-primary transition-colors py-2">Process</a>
-                <a href="#contact" class="mobile-link hover:text-brand-primary transition-colors py-2">Contact</a>
-                <a href="#contact" class="mobile-link bg-brand-accent text-white px-8 py-4 rounded-btn btn-text hover:bg-brand-hover hover:text-white transition-colors w-full text-center mt-6">
+                <a href="index.html" class="mobile-link hover:text-brand-primary transition-colors py-2">Home</a>
+                <a href="about.html" class="mobile-link hover:text-brand-primary transition-colors py-2">About</a>
+                <a href="services.html" class="mobile-link hover:text-brand-primary transition-colors py-2">Services</a>
+                <a href="portfolio.html" class="mobile-link hover:text-brand-primary transition-colors py-2">Portfolio</a>
+                <a href="contact.html" class="mobile-link hover:text-brand-primary transition-colors py-2">Contact</a>
+                <a href="contact.html" class="mobile-link bg-brand-primary text-white px-8 py-4 rounded-btn btn-text hover:bg-brand-hover hover:text-white transition-colors w-full text-center mt-6">
                     Get a Quote
                 </a>
             </div>
@@ -167,350 +121,300 @@
     </nav>
 
     <main>
-    <!-- Hero Section -->
-    <section id="home" class="pt-36 pb-20 lg:pt-48 lg:pb-32 bg-ui-bg relative overflow-hidden">
-        <div class="container mx-auto px-6 relative z-10">
-            <div class="flex flex-col lg:flex-row items-center justify-between gap-16">
+        <!-- Hero Section -->
+        <section id="home" class="pt-40 pb-28 lg:pt-56 lg:pb-32 flex items-center relative overflow-hidden bg-cover bg-center" style="background-image: url('assets/flat_hero.png');">
+            <!-- Dark Gradient Overlay -->
+            <div class="absolute inset-0 bg-gradient-to-r from-black/95 via-black/80 to-transparent z-0"></div>
+            <div class="absolute inset-0 bg-black/30 md:hidden z-0"></div> <!-- Extra dimming for mobile -->
+
+            <div class="container mx-auto px-6 max-w-7xl relative z-10">
                 <div class="w-full lg:max-w-[650px]">
-                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-ui-bgSec text-brand-primary font-medium text-sm mb-6">
-                        <i class="ph-fill ph-sparkle"></i> Creative Digital Studio
-                    </div>
-                    <h1 class="font-bold mb-6 text-ui-textPrimary leading-[1.1]">
+                    <h1 class="font-bold mb-4 text-white leading-[1.1]">
                         <span class="block text-4xl sm:text-5xl md:text-[4rem] lg:text-[4.25rem]">We Build Brands</span>
                         <span class="block text-4xl sm:text-5xl md:text-6xl lg:text-6xl">People Remember.</span>
                     </h1>
-                    <p class="text-lg text-ui-textSec mb-10 leading-relaxed">
+                    <p class="text-lg text-gray-300 mb-6 leading-relaxed max-w-xl">
                         We create brands, websites & digital experiences that drive growth.
                     </p>
-                    <div class="flex flex-col sm:flex-row gap-4 mb-10">
-                        <a href="#contact" class="bg-brand-accent text-white px-8 py-4 rounded-btn btn-text text-center hover:bg-brand-hover hover:text-white transition-colors duration-300">
+                    <div class="flex flex-col sm:flex-row gap-4 mb-8">
+                        <a href="contact.html" class="bg-brand-primary text-white px-8 py-4 rounded-btn btn-text text-center hover:bg-brand-hover hover:text-white transition-colors duration-300 shadow-[0_0_20px_rgba(122,122,255,0.3)]">
                             Get a Free Quote
                         </a>
-                        <a href="#work" class="bg-ui-bgSec text-ui-textPrimary px-8 py-4 rounded-btn btn-text text-center hover:bg-brand-hover hover:text-white transition-colors duration-300">
+                        <a href="portfolio.html" class="bg-white/10 text-white border border-white/20 px-8 py-4 rounded-btn btn-text text-center hover:bg-white/20 transition-colors duration-300 backdrop-blur-sm">
                             View Portfolio
                         </a>
                     </div>
                     
-                    <div class="flex items-center gap-4">
-                        <div class="flex -space-x-3">
-                            <img src="assets/avatars.png" class="h-10 rounded-full bg-ui-bgSec object-cover ring-4 ring-ui-bg" alt="Advrite Client Avatars">
-                        </div>
-                        <div class="text-sm pl-2">
-                            <div class="flex text-amber-400 text-lg">
-                                ★★★★★
+                                        <div class="inline-flex items-center gap-4">
+                            <!-- Team Icon -->
+                            <div>
+                                <div class="w-10 h-10 rounded-full bg-[#1A1A24] border border-white/10 flex items-center justify-center text-gray-300 shadow-inner">
+                                    <i class="ph ph-users text-xl"></i>
+                                </div>
                             </div>
-                            <span class="text-ui-textSec font-medium">Trusted by 50+ businesses</span>
+                            
+                            <!-- Rating and Text -->
+                            <div class="flex flex-col justify-center pt-0.5">
+                                <div class="flex items-center gap-2 mb-1">
+                                    <div class="flex text-[#FFD700] text-[12px] gap-0.5">
+                                        <i class="ph-fill ph-star"></i>
+                                        <i class="ph-fill ph-star"></i>
+                                        <i class="ph-fill ph-star"></i>
+                                        <i class="ph-fill ph-star"></i>
+                                        <i class="ph-fill ph-star"></i>
+                                    </div>
+                                    <span class="text-white font-bold text-[13px] leading-none">4.9 Rating</span>
+                                </div>
+                                <span class="text-gray-400 font-medium text-[13px] leading-none">Trusted by 50+ businesses</span>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="w-full lg:flex-1 flex justify-end relative mt-12 lg:mt-0">
-                    <img src="assets/flat_hero.png" alt="Advrite Creative Branding Illustration" class="w-full max-w-[600px] object-contain shape-blob mix-blend-multiply">
-                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Services -->
-    <section id="services" class="py-24 bg-ui-bg">
-        <div class="container mx-auto px-6">
-            <div class="text-center mb-24 max-w-2xl mx-auto">
-                <h2 class="text-4xl font-bold mb-4 text-ui-textPrimary">Our Services</h2>
-                <p class="text-lg text-ui-textSec">Clean, creative, and results-driven digital solutions.</p>
-            </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="service-card relative overflow-hidden bg-ui-bgSec p-6 sm:p-10 rounded-card transition-all duration-[350ms] ease-out">
-                    <div class="service-icon-wrapper w-14 h-14 rounded-2xl bg-white flex items-center justify-center text-brand-primary mb-6 relative z-10 transition-transform duration-[350ms] ease-out">
-                        <i class="ph ph-desktop text-3xl"></i>
-                    </div>
-                    <h3 class="service-title text-xl font-bold mb-3 text-ui-textPrimary relative z-10 transition-colors duration-[350ms]">Website Design</h3>
-                    <p class="service-desc text-ui-textSec relative z-10 transition-colors duration-[350ms]">Modern, responsive, and high-converting websites built with purpose.</p>
-                </div>
-                <div class="service-card relative overflow-hidden bg-ui-bgSec p-6 sm:p-10 rounded-card transition-all duration-[350ms] ease-out">
-                    <div class="service-icon-wrapper w-14 h-14 rounded-2xl bg-white flex items-center justify-center text-brand-primary mb-6 relative z-10 transition-transform duration-[350ms] ease-out">
-                        <i class="ph ph-bezier-curve text-3xl"></i>
-                    </div>
-                    <h3 class="service-title text-xl font-bold mb-3 text-ui-textPrimary relative z-10 transition-colors duration-[350ms]">Graphic Design</h3>
-                    <p class="service-desc text-ui-textSec relative z-10 transition-colors duration-[350ms]">Stunning visual identities, logos, and marketing materials.</p>
-                </div>
-                <div class="service-card relative overflow-hidden bg-ui-bgSec p-6 sm:p-10 rounded-card transition-all duration-[350ms] ease-out">
-                    <div class="service-icon-wrapper w-14 h-14 rounded-2xl bg-white flex items-center justify-center text-brand-primary mb-6 relative z-10 transition-transform duration-[350ms] ease-out">
-                        <i class="ph ph-film-strip text-3xl"></i>
-                    </div>
-                    <h3 class="service-title text-xl font-bold mb-3 text-ui-textPrimary relative z-10 transition-colors duration-[350ms]">Video Editing</h3>
-                    <p class="service-desc text-ui-textSec relative z-10 transition-colors duration-[350ms]">Professional edits that tell your brand's unique story.</p>
-                </div>
-                <div class="service-card relative overflow-hidden bg-ui-bgSec p-6 sm:p-10 rounded-card transition-all duration-[350ms] ease-out">
-                    <div class="service-icon-wrapper w-14 h-14 rounded-2xl bg-white flex items-center justify-center text-brand-primary mb-6 relative z-10 transition-transform duration-[350ms] ease-out">
-                        <i class="ph ph-video-camera text-3xl"></i>
-                    </div>
-                    <h3 class="service-title text-xl font-bold mb-3 text-ui-textPrimary relative z-10 transition-colors duration-[350ms]">Motion Graphics</h3>
-                    <p class="service-desc text-ui-textSec relative z-10 transition-colors duration-[350ms]">Engaging vector animations that simplify complex ideas.</p>
-                </div>
-                <div class="service-card relative overflow-hidden bg-ui-bgSec p-6 sm:p-10 rounded-card transition-all duration-[350ms] ease-out">
-                    <div class="service-icon-wrapper w-14 h-14 rounded-2xl bg-white flex items-center justify-center text-brand-primary mb-6 relative z-10 transition-transform duration-[350ms] ease-out">
-                        <i class="ph ph-megaphone text-3xl"></i>
-                    </div>
-                    <h3 class="service-title text-xl font-bold mb-3 text-ui-textPrimary relative z-10 transition-colors duration-[350ms]">Digital Marketing</h3>
-                    <p class="service-desc text-ui-textSec relative z-10 transition-colors duration-[350ms]">Data-driven strategies to reach and engage your audience.</p>
-                </div>
-                <div class="service-card relative overflow-hidden bg-ui-bgSec p-6 sm:p-10 rounded-card transition-all duration-[350ms] ease-out">
-                    <div class="service-icon-wrapper w-14 h-14 rounded-2xl bg-white flex items-center justify-center text-brand-primary mb-6 relative z-10 transition-transform duration-[350ms] ease-out">
-                        <i class="ph ph-camera text-3xl"></i>
-                    </div>
-                    <h3 class="service-title text-xl font-bold mb-3 text-ui-textPrimary relative z-10 transition-colors duration-[350ms]">Photography</h3>
-                    <p class="service-desc text-ui-textSec relative z-10 transition-colors duration-[350ms]">High-quality visual content creation for your products.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Our Process -->
-    <section id="process" class="py-24 bg-ui-bgSec">
-        <div class="container mx-auto px-6">
-            <h2 class="text-4xl font-bold mb-24 text-center text-ui-textPrimary">How We Work</h2>
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-                <div class="text-center group cursor-pointer transition-transform duration-300 ease-in-out hover:scale-105">
-                    <div class="w-20 h-20 mx-auto rounded-full bg-white group-hover:bg-brand-primary transition-colors duration-300 flex items-center justify-center text-brand-primary group-hover:text-white text-3xl mb-8">
-                        <span class="sr-only">Step </span>1
-                    </div>
-                    <h3 class="font-bold text-lg mb-2 group-hover:text-brand-primary transition-colors duration-300">Discovery</h3>
-                    <p class="text-ui-textSec text-sm">We learn about your brand, goals, and audience.</p>
-                </div>
-                <div class="text-center group cursor-pointer transition-transform duration-300 ease-in-out hover:scale-105">
-                    <div class="w-20 h-20 mx-auto rounded-full bg-white group-hover:bg-brand-primary transition-colors duration-300 flex items-center justify-center text-brand-primary group-hover:text-white text-3xl mb-8">
-                        <span class="sr-only">Step </span>2
-                    </div>
-                    <h3 class="font-bold text-lg mb-2 group-hover:text-brand-primary transition-colors duration-300">Strategy</h3>
-                    <p class="text-ui-textSec text-sm">We map out a creative plan tailored to your needs.</p>
-                </div>
-                <div class="text-center group cursor-pointer transition-transform duration-300 ease-in-out hover:scale-105">
-                    <div class="w-20 h-20 mx-auto rounded-full bg-white group-hover:bg-brand-primary transition-colors duration-300 flex items-center justify-center text-brand-primary group-hover:text-white text-3xl mb-8">
-                        <span class="sr-only">Step </span>3
-                    </div>
-                    <h3 class="font-bold text-lg mb-2 group-hover:text-brand-primary transition-colors duration-300">Creation</h3>
-                    <p class="text-ui-textSec text-sm">Our designers and creators bring the vision to life.</p>
-                </div>
-                <div class="text-center group cursor-pointer transition-transform duration-300 ease-in-out hover:scale-105">
-                    <div class="w-20 h-20 mx-auto rounded-full bg-white group-hover:bg-brand-primary transition-colors duration-300 flex items-center justify-center text-brand-primary group-hover:text-white text-3xl mb-8">
-                        <span class="sr-only">Step </span>4
-                    </div>
-                    <h3 class="font-bold text-lg mb-2 group-hover:text-brand-primary transition-colors duration-300">Launch</h3>
-                    <p class="text-ui-textSec text-sm">We deliver the final assets and help you launch.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Featured Projects -->
-    <section id="work" class="py-24 bg-ui-bg">
-        <div class="container mx-auto px-6">
-            <div class="flex justify-between items-end mb-16">
-                <h2 class="text-4xl font-bold text-ui-textPrimary">Featured Work</h2>
-                <a href="#" class="text-brand-primary font-medium hover:underline hidden sm:block">View all projects &rarr;</a>
-            </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-                <div class="group cursor-pointer">
-                    <div class="rounded-card overflow-hidden mb-6 bg-ui-bgSec aspect-[4/3]">
-                        <img src="assets/portfolio_1.png" alt="Advrite Brand Identity Project" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 mix-blend-multiply">
-                    </div>
-                    <h3 class="text-2xl font-bold mb-2 group-hover:text-brand-primary transition-colors duration-300">Creative Brand Identity</h3>
-                    <p class="text-ui-textSec font-medium">Branding • Logo Design</p>
-                </div>
-                <div class="group cursor-pointer mt-0 md:mt-16">
-                    <div class="rounded-card overflow-hidden mb-6 bg-ui-bgSec aspect-[4/3]">
-                        <img src="assets/portfolio_2.png" alt="Advrite Healthcare Branding Project" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 mix-blend-multiply">
-                    </div>
-                    <h3 class="text-2xl font-bold mb-2 group-hover:text-brand-primary transition-colors duration-300">Healthcare Brand Identity</h3>
-                    <p class="text-ui-textSec font-medium">Branding • Logo Design</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials -->
-    <section class="py-24 bg-ui-bgSec">
-        <div class="container mx-auto px-6">
-            <div class="max-w-4xl mx-auto bg-white p-12 md:p-16 rounded-card text-center">
-                <div class="text-amber-400 text-2xl mb-6">★★★★★</div>
-                <p class="text-2xl md:text-3xl text-ui-textPrimary font-medium leading-relaxed mb-12">
-                    "Creative work that exceeded expectations."
+        <!-- About Preview -->
+        <section class="pt-14 md:pt-16 pb-8 bg-white">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-ui-textPrimary">Your Creative Partners</h2>
+                <p class="text-xl text-ui-textSec max-w-[560px] mx-auto leading-relaxed mb-6">
+                    Where strategy meets design, transforming vision<br class="hidden md:block"> into distinctive identities that connect and inspire.
                 </p>
-                <div class="flex items-center justify-center gap-4">
-                    <div class="w-12 h-12 bg-ui-bgSec rounded-full flex items-center justify-center text-ui-textSec font-bold">JD</div>
-                    <div class="text-left">
-                        <h4 class="font-bold text-ui-textPrimary">Jane Doe</h4>
-                        <p class="text-ui-textSec text-sm">Founder, TechFlow</p>
-                    </div>
-                </div>
+                <a href="about.html" class="text-brand-primary font-medium hover:underline inline-flex items-center gap-2">
+                    Learn more about us <i class="ph ph-arrow-right"></i>
+                </a>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Final CTA & Contact -->
-    <section id="contact" class="py-24 bg-ui-bg">
-        <div class="container mx-auto px-6">
-            <div class="max-w-3xl mx-auto text-center mb-20">
-                <h2 class="text-4xl sm:text-5xl font-bold mb-6 text-ui-textPrimary">Ready to start?</h2>
-                <p class="text-xl text-ui-textSec">Every great brand starts with a conversation.</p>
-            </div>
-            
-            <div class="max-w-2xl mx-auto bg-ui-bgSec p-8 md:p-12 rounded-card relative">
-                <!-- Success Message -->
-                <div id="success-message" class="hidden flex-col items-center justify-center text-center p-8 transition-opacity duration-500 bg-white rounded-xl mb-8">
-                    <div class="mb-8 relative">
-                        <div class="absolute inset-0 bg-green-400 blur-xl opacity-20 rounded-full"></div>
-                        <i class="ph-fill ph-check-circle text-7xl text-green-500 relative z-10 drop-shadow-sm"></i>
+        <!-- Featured Services -->
+        <section class="pt-8 pb-24 bg-ui-bg">
+            <div class="container mx-auto px-6">
+                <div class="mb-12">
+                    <div class="flex flex-col sm:flex-row sm:justify-between sm:items-baseline gap-2 mb-3">
+                        <h2 class="text-3xl md:text-4xl font-bold text-ui-textPrimary">Our Expertise</h2>
+                        <a href="services.html" class="text-brand-primary font-medium hover:underline hidden sm:inline-flex items-center gap-2">View all services <i class="ph ph-arrow-right"></i></a>
                     </div>
-                    <h3 class="text-3xl font-bold text-ui-textPrimary mb-3">Message Sent!</h3>
-                    <p class="text-ui-textSec text-lg">Thank you!. we’ll be in touch soon.</p>
+                    <p class="text-lg text-ui-textSec">We provide end-to-end creative solutions.</p>
                 </div>
                 
-                <form id="contact-form" name="contact" method="POST" data-netlify="true" class="space-y-6 transition-opacity duration-500">
-                    <input type="hidden" name="form-name" value="contact" />
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <div>
-                            <label for="name" class="block text-sm font-medium text-ui-textPrimary mb-3">Name</label>
-                            <input type="text" id="name" name="name" class="w-full px-5 py-4 rounded-xl bg-white focus:outline-none focus:ring-2 focus:ring-brand-primary/20 transition-colors text-ui-textPrimary" required>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="service-card relative overflow-hidden bg-ui-bgLightLav p-6 rounded-card transition-all duration-[350ms] ease-out shadow-sm border border-transparent hover:border-brand-primary/10">
+                        <div class="service-icon-wrapper w-14 h-14 rounded-2xl bg-white flex items-center justify-center text-brand-primary mb-6 relative z-10 transition-transform duration-[350ms] ease-out">
+                            <i class="ph ph-desktop text-3xl"></i>
                         </div>
-                        <div>
-                            <label for="email" class="block text-sm font-medium text-ui-textPrimary mb-3">Email</label>
-                            <input type="email" id="email" name="email" class="w-full px-5 py-4 rounded-xl bg-white focus:outline-none focus:ring-2 focus:ring-brand-primary/20 transition-colors text-ui-textPrimary" required>
+                        <h3 class="service-title text-xl font-bold mb-3 text-ui-textPrimary relative z-10 transition-colors duration-[350ms]">Website Design</h3>
+                        <p class="service-desc text-ui-textSec relative z-10 transition-colors duration-[350ms] text-sm">Modern, responsive, and high-converting websites built with purpose.</p>
+                    </div>
+                    <div class="service-card relative overflow-hidden bg-ui-bgLightLav p-6 rounded-card transition-all duration-[350ms] ease-out shadow-sm border border-transparent hover:border-brand-primary/10">
+                        <div class="service-icon-wrapper w-14 h-14 rounded-2xl bg-white flex items-center justify-center text-brand-primary mb-6 relative z-10 transition-transform duration-[350ms] ease-out">
+                            <i class="ph ph-bezier-curve text-3xl"></i>
                         </div>
+                        <h3 class="service-title text-xl font-bold mb-3 text-ui-textPrimary relative z-10 transition-colors duration-[350ms]">Graphic Design</h3>
+                        <p class="service-desc text-ui-textSec relative z-10 transition-colors duration-[350ms] text-sm">Stunning visual identities, logos, and marketing materials.</p>
+                    </div>
+                    <div class="service-card relative overflow-hidden bg-ui-bgLightLav p-6 rounded-card transition-all duration-[350ms] ease-out shadow-sm border border-transparent hover:border-brand-primary/10">
+                        <div class="service-icon-wrapper w-14 h-14 rounded-2xl bg-white flex items-center justify-center text-brand-primary mb-6 relative z-10 transition-transform duration-[350ms] ease-out">
+                            <i class="ph ph-film-strip text-3xl"></i>
+                        </div>
+                        <h3 class="service-title text-xl font-bold mb-3 text-ui-textPrimary relative z-10 transition-colors duration-[350ms]">Video Editing</h3>
+                        <p class="service-desc text-ui-textSec relative z-10 transition-colors duration-[350ms] text-sm">Professional edits that tell your brand's unique story.</p>
+                    </div>
+                    <div class="service-card relative overflow-hidden bg-ui-bgLightLav p-6 rounded-card transition-all duration-[350ms] ease-out shadow-sm border border-transparent hover:border-brand-primary/10">
+                        <div class="service-icon-wrapper w-14 h-14 rounded-2xl bg-white flex items-center justify-center text-brand-primary mb-6 relative z-10 transition-transform duration-[350ms] ease-out">
+                            <i class="ph ph-video-camera text-3xl"></i>
+                        </div>
+                        <h3 class="service-title text-xl font-bold mb-3 text-ui-textPrimary relative z-10 transition-colors duration-[350ms]">Motion Graphics</h3>
+                        <p class="service-desc text-ui-textSec relative z-10 transition-colors duration-[350ms] text-sm">Engaging vector animations that simplify complex ideas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+                <!-- Featured Projects -->
+        <section class="py-24 bg-ui-bgLightLav">
+            <div class="container mx-auto px-6 max-w-7xl">
+                <div class="flex flex-col sm:flex-row justify-between items-start sm:items-end mb-16 gap-6">
+                    <h2 class="text-4xl font-bold text-ui-textPrimary">Featured Work</h2>
+                    <a href="portfolio.html" class="text-brand-primary font-medium hover:underline inline-flex items-center gap-2 group">View portfolio <i class="ph ph-arrow-right group-hover:translate-x-1 transition-transform"></i></a>
+                </div>
+                
+                <div class="flex flex-col gap-24">
+                    <!-- Project 1 -->
+                    <div class="group cursor-pointer">
+                        <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-6 gap-2 px-2">
+                            <h3 class="text-2xl md:text-3xl font-bold text-ui-textPrimary transition-colors group-hover:text-brand-primary">Creative Brand Identity</h3>
+                            <p class="text-ui-textSec font-medium text-sm md:text-base">Branding <span class="text-brand-creativeYellow mx-2">&bull;</span> Logo Design</p>
+                        </div>
+                        <div class="w-full bg-white overflow-hidden rounded-[24px] shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-gray-100 relative">
+                            <img src="assets/portfolio_1.png" alt="Advrite Brand Identity Project" loading="lazy" class="w-full h-auto object-cover transition-transform duration-700 ease-out group-hover:scale-[1.03]">
+                        </div>
+                    </div>
+
+                                        <!-- Project 2 -->
+                    <div class="group cursor-pointer">
+                        <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-6 gap-2 px-2">
+                            <h3 class="text-2xl md:text-3xl font-bold text-ui-textPrimary transition-colors group-hover:text-brand-primary">Video / Motion</h3>
+                            <p class="text-ui-textSec font-medium text-sm md:text-base">Video <span class="text-brand-creativeYellow mx-2">&bull;</span> Motion Graphics</p>
+                        </div>
+                        <div class="relative w-full bg-black overflow-hidden rounded-[24px] shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-gray-100">
+                            <video id="featured-video-2" src="assets/video_2.mp4" muted loop playsinline preload="metadata" class="block w-full h-auto object-cover transition-transform duration-700 ease-out group-hover:scale-[1.03]"></video>
+                            <button type="button" id="featured-video-play-2" aria-label="Play video" class="absolute inset-0 flex items-center justify-center bg-[#171A2B]/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10" onclick="playInlineVideo('featured-video-2', 'featured-video-play-2')">
+                                <div class="w-16 h-16 md:w-20 md:h-20 bg-brand-primary rounded-full flex items-center justify-center text-white shadow-lg transform scale-90 group-hover:scale-100 transition-transform duration-500 ease-out pointer-events-none">
+                                    <i class="ph-fill ph-play text-2xl md:text-3xl ml-1"></i>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Advrite -->
+        <section class="py-24 bg-ui-bg">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-4xl font-bold mb-16 text-ui-textPrimary">Why Advrite</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                    <div>
+                        <div class="text-brand-primary text-5xl mb-6"><i class="ph ph-medal"></i></div>
+                        <h4 class="text-xl font-bold mb-3 text-ui-textPrimary">Premium Quality</h4>
+                        <p class="text-ui-textSec">Crafted with precision and purpose.</p>
                     </div>
                     <div>
-                        <label for="message" class="block text-sm font-medium text-ui-textPrimary mb-3">Message</label>
-                        <textarea id="message" name="message" rows="5" class="w-full px-5 py-4 rounded-xl bg-white focus:outline-none focus:ring-2 focus:ring-brand-primary/20 transition-colors text-ui-textPrimary" required></textarea>
+                        <div class="text-brand-primary text-5xl mb-6"><i class="ph ph-users"></i></div>
+                        <h4 class="text-xl font-bold mb-3 text-ui-textPrimary">Collaborative Partner</h4>
+                        <p class="text-ui-textSec">Built together, every step of the way.</p>
                     </div>
-                    <div class="pt-4">
-                        <button type="submit" class="w-full bg-brand-accent text-white px-8 py-4 rounded-btn btn-text hover:bg-brand-hover hover:text-white transition-colors duration-300">
-                            Send Message
-                        </button>
+                    <div>
+                        <div class="text-brand-primary text-5xl mb-6"><i class="ph ph-target"></i></div>
+                        <h4 class="text-xl font-bold mb-3 text-ui-textPrimary">Result Driven</h4>
+                        <p class="text-ui-textSec">Creative work designed to deliver impact.</p>
                     </div>
-                </form>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+
+        <!-- Final CTA -->
+        <section class="py-16 md:py-24 bg-[#31316b] text-center overflow-hidden">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6 text-[#FFFFFF]">Ready to grow your brand?</h2>
+                <p class="text-xl text-[#fffc00] max-w-2xl mx-auto mb-10">
+                    Let's create something people remember.
+                </p>
+                <a href="contact.html" class="inline-block bg-[#FFFFFF] text-[#31316B] px-8 py-4 rounded-[20px] btn-text hover:bg-[#7A7AFF] hover:text-[#FFFFFF] active:bg-[#7A7AFF] active:text-[#FFFFFF] hover:-translate-y-[2px] active:-translate-y-[2px] hover:shadow-lg hover:shadow-[#7A7AFF]/40 active:shadow-lg active:shadow-[#7A7AFF]/40 transition-all duration-300 ease-in-out">
+                    Get a Free Quote &rarr;
+                </a>
+            </div>
+        </section>
     </main>
 
     <!-- Footer -->
-    <footer class="pt-24 pb-8 bg-white text-ui-textPrimary border-t border-gray-100">
-        <div class="container max-w-7xl mx-auto px-6">
-            <!-- Top Section -->
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-                <!-- Col 1: Logo & Tagline -->
-                <div class="flex flex-col gap-6 items-start">
-                    <div class="h-10 flex items-center">
-                        <a href="#" class="text-[32px] font-bold">
-                            <img src="assets/logo.svg" alt="Advrite Logo" loading="lazy" decoding="async" class="h-[40px] w-auto" />
-                        </a>
-                    </div>
-                    <p class="text-ui-textSec text-base font-medium">Branding • Creative Direction</p>
-                </div>
-
-                <!-- Col 2: Contact Info -->
-                <div class="flex flex-col gap-6 items-start md:mx-auto">
-                    <div class="h-10 flex items-center">
-                        <h4 class="font-bold text-[22px] text-ui-textPrimary m-0">Contact</h4>
-                    </div>
-                    <div class="flex flex-col gap-3 text-base text-ui-textSec">
-                        <a href="mailto:hello@advrite.com" class="hover:text-brand-primary transition-colors duration-[250ms]">hello@advrite.com</a>
-                        <div class="flex flex-col gap-1">
-                            <a href="tel:+917012008225" class="hover:text-brand-primary transition-colors duration-[250ms]">+91 70120 08225</a>
-                            <a href="tel:+918590008225" class="hover:text-brand-primary transition-colors duration-[250ms]">+91 85900 08225</a>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Col 3: Social Links -->
-                <div class="flex flex-col gap-6 items-start md:ml-auto">
-                    <div class="h-10 flex items-center">
-                        <h4 class="font-bold text-[22px] text-ui-textPrimary m-0">Follow Us</h4>
-                    </div>
-                    <div class="flex gap-4 text-ui-textSec text-[22px]">
-                        <a href="#" class="inline-block transform hover:text-brand-primary hover:scale-105 transition-all duration-[250ms]" aria-label="Instagram">
+    <footer class="pt-16 pb-8 bg-[#F8F8FC] text-ui-textPrimary border-t border-gray-100">
+        <div class="container mx-auto px-6 max-w-7xl">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-8">
+                <!-- Left: Brand -->
+                <div class="flex flex-col items-start">
+                    <a href="index.html" class="inline-block mb-6">
+                        <img src="assets/logo.svg" alt="Advrite Logo" loading="lazy" decoding="async" class="h-10 w-auto" />
+                    </a>
+                    <p class="text-lg font-bold text-ui-textPrimary mb-8">Creative &bull; Branding &bull; Digital</p>
+                    
+                    <div class="flex gap-6 text-2xl text-ui-textSec">
+                        <a href="#" class="hover:text-[#7A7AFF] hover:-translate-y-1 transition-all duration-300" aria-label="Instagram">
                             <i class="ph ph-instagram-logo"></i>
                         </a>
-                        <a href="#" class="inline-block transform hover:text-brand-primary hover:scale-105 transition-all duration-[250ms]" aria-label="Behance">
+                        <a href="#" class="hover:text-[#7A7AFF] hover:-translate-y-1 transition-all duration-300" aria-label="Behance">
                             <i class="ph ph-behance-logo"></i>
                         </a>
-                        <a href="#" class="inline-block transform hover:text-brand-primary hover:scale-105 transition-all duration-[250ms]" aria-label="LinkedIn">
+                        <a href="#" class="hover:text-[#7A7AFF] hover:-translate-y-1 transition-all duration-300" aria-label="LinkedIn">
                             <i class="ph ph-linkedin-logo"></i>
                         </a>
                     </div>
                 </div>
+                
+                <!-- Right: Quick Links -->
+                <div class="flex flex-col items-start w-full md:-mt-2 md:ml-[40%]">
+                    <h4 class="text-sm font-bold tracking-widest uppercase text-ui-textPrimary mb-6">QUICK LINKS</h4>
+                    
+                    <div class="flex flex-col w-full max-w-[320px]">
+                        <a href="about.html" class="flex justify-between items-center py-4 border-b border-gray-200 text-base font-medium text-ui-textSec hover:text-[#7A7AFF] transition-colors group">
+                            <span>About Us</span>
+                            <i class="ph ph-arrow-right text-[#7A7AFF] opacity-70 group-hover:opacity-100 group-hover:translate-x-1 transition-all"></i>
+                        </a>
+                        <a href="services.html" class="flex justify-between items-center py-4 border-b border-gray-200 text-base font-medium text-ui-textSec hover:text-[#7A7AFF] transition-colors group">
+                            <span>Services</span>
+                            <i class="ph ph-arrow-right text-[#7A7AFF] opacity-70 group-hover:opacity-100 group-hover:translate-x-1 transition-all"></i>
+                        </a>
+                        <a href="portfolio.html" class="flex justify-between items-center py-4 border-b border-gray-200 text-base font-medium text-ui-textSec hover:text-[#7A7AFF] transition-colors group">
+                            <span>Portfolio</span>
+                            <i class="ph ph-arrow-right text-[#7A7AFF] opacity-70 group-hover:opacity-100 group-hover:translate-x-1 transition-all"></i>
+                        </a>
+                        <a href="contact.html" class="flex justify-between items-center py-4 border-b border-gray-200 text-base font-medium text-ui-textSec hover:text-[#7A7AFF] transition-colors group">
+                            <span>Contact</span>
+                            <i class="ph ph-arrow-right text-[#7A7AFF] opacity-70 group-hover:opacity-100 group-hover:translate-x-1 transition-all"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
-            
-            <!-- Divider -->
-            <div class="w-full h-px bg-gray-100 mt-10 mb-6"></div>
-            
+
+            <div class="w-full h-px bg-gray-200 mb-6"></div>
             <!-- Bottom Section -->
-            <div class="flex flex-col md:flex-row justify-between items-center gap-4 text-sm font-medium text-ui-textSec text-center md:text-left">
-                <div>
-                    &copy; 2026 Advrite. All Rights Reserved.
-                </div>
-                <div class="flex gap-6 justify-center md:justify-end w-full md:w-auto">
-                    <a href="#" class="hover:text-brand-primary transition-colors duration-[250ms]">Privacy Policy</a>
-                    <a href="#" class="hover:text-brand-primary transition-colors duration-[250ms]">Terms</a>
-                </div>
+            <div class="w-full text-center md:text-left">
+                <span class="text-lg md:text-xl font-bold"><span class="text-[#171A2B]">Let's create something</span> <span class="text-[#7A7AFF]">memorable.</span></span>
             </div>
+            
         </div>
     </footer>
 
-    <script>
-        // Mobile Menu Logic
-        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-        const mobileMenuClose = document.getElementById('mobile-menu-close');
-        const mobileMenu = document.getElementById('mobile-menu');
-        const mobileLinks = document.querySelectorAll('.mobile-link');
+    <!-- Copyright Bar -->
+    <div class="bg-[#050505] border-t border-[#222222] py-6">
+        <div class="container mx-auto px-6 max-w-7xl w-full flex flex-col md:flex-row justify-between items-center gap-4 text-sm font-medium text-gray-400">
+            <div class="text-center md:text-left">
+                <span>&copy; 2026 Advrite. All Rights Reserved.</span>
+            </div>
+            <div class="flex gap-8">
+                <a href="#" class="hover:text-white transition-colors duration-300">Privacy Policy</a>
+                <a href="#" class="hover:text-white transition-colors duration-300">Terms</a>
+            </div>
+        </div>
+    </div>
 
-        function toggleMenu() {
-            if (mobileMenu.classList.contains('hidden')) {
-                mobileMenu.classList.remove('hidden');
-                mobileMenu.classList.add('flex');
-                document.body.style.overflow = 'hidden'; // Prevent scrolling behind menu
-            } else {
-                mobileMenu.classList.add('hidden');
-                mobileMenu.classList.remove('flex');
-                document.body.style.overflow = '';
-            }
+    <!-- Global JS -->
+    <script src="js/main.js"></script>
+<script>
+    function playInlineVideo(videoId, btnId) {
+        const video = document.getElementById(videoId);
+        const playBtn = document.getElementById(btnId);
+        
+        if (video && playBtn) {
+            playBtn.style.display = 'none';
+            video.controls = true;
+            video.play().catch(e => console.log('Playback prevented', e));
         }
-
-        if (mobileMenuBtn && mobileMenuClose && mobileMenu) {
-            mobileMenuBtn.addEventListener('click', toggleMenu);
-            mobileMenuClose.addEventListener('click', toggleMenu);
-            
-            mobileLinks.forEach(link => {
-                link.addEventListener('click', toggleMenu);
-            });
-        }
-
-        // Contact Form Logic
-        const contactForm = document.getElementById('contact-form');
-        const successMessage = document.getElementById('success-message');
-
-        if (contactForm) {
-            contactForm.addEventListener('submit', function(e) {
-                e.preventDefault();
-                const formData = new FormData(contactForm);
-                
-                fetch('/', {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-                    body: new URLSearchParams(formData).toString()
-                })
-                .then(() => {
-                    contactForm.style.opacity = '0';
-                    setTimeout(() => {
-                        contactForm.classList.add('hidden');
-                        successMessage.classList.remove('hidden');
-                        successMessage.classList.add('flex');
-                    }, 300);
-                })
-                .catch((error) => alert('Something went wrong. Please try again.'));
-            });
-        }
-    </script>
-</body>
+    }
+</script>
+<script src="js/main.js"></script></body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
