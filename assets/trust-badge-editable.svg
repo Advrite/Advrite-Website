@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 276.9 44.2">
+  <!-- Generator: Adobe Illustrator 30.5.1, SVG Export Plug-In . SVG Version: 2.1.4 Build 3)  -->
+  <defs>
+    <style>
+      .st0 {
+        fill: #e2e8f0;
+      }
+
+      .st1 {
+        font-family: Arial-BoldMT, Arial;
+        font-size: 14px;
+        font-weight: 700;
+      }
+
+      .st1, .st2 {
+        isolation: isolate;
+      }
+
+      .st2 {
+        fill: #666;
+        font-family: ArialMT, Arial;
+        font-size: 13px;
+      }
+
+      .st3 {
+        fill: #cbd5e1;
+      }
+
+      .st4 {
+        fill: gold;
+      }
+
+      .st5 {
+        fill: #94a3b8;
+      }
+
+      .st6 {
+        fill: none;
+        stroke: #fff;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g>
+    <g>
+      <circle class="st0" cx="20" cy="20" r="20"/>
+      <circle class="st6" cx="20" cy="20" r="19"/>
+    </g>
+    <g>
+      <circle class="st3" cx="48" cy="20" r="20"/>
+      <circle class="st6" cx="48" cy="20" r="19"/>
+    </g>
+    <g>
+      <circle class="st5" cx="76" cy="20" r="20"/>
+      <circle class="st6" cx="76" cy="20" r="19"/>
+    </g>
+  </g>
+  <g>
+    <g>
+      <path class="st4" d="M119.6,6.6l2.5,5,5.5.8-4,3.9.9,5.5-4.9-2.6-4.9,2.6.9-5.5-4-3.9,5.5-.8,2.5-5Z"/>
+      <path class="st4" d="M138.8,6.6l2.5,5,5.5.8-4,3.9.9,5.5-4.9-2.6-4.9,2.6.9-5.5-4-3.9,5.5-.8,2.5-5Z"/>
+      <path class="st4" d="M158,6.6l2.5,5,5.5.8-4,3.9.9,5.5-4.9-2.6-4.9,2.6.9-5.5-4-3.9,5.5-.8,2.5-5Z"/>
+      <path class="st4" d="M177.2,6.6l2.5,5,5.5.8-4,3.9.9,5.5-4.9-2.6-4.9,2.6.9-5.5-4-3.9,5.5-.8,2.5-5Z"/>
+      <path class="st4" d="M196.4,6.6l2.5,5,5.5.8-4,3.9.9,5.5-4.9-2.6-4.9,2.6.9-5.5-4-3.9,5.5-.8,2.5-5Z"/>
+    </g>
+    <text class="st1" transform="translate(210 20)"><tspan x="0" y="0">4.9 Rating</tspan></text>
+    <text class="st2" transform="translate(110 40)"><tspan x="0" y="0">Trusted by 50+ businesses</tspan></text>
+  </g>
+</svg>
