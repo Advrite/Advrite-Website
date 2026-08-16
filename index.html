@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
@@ -74,46 +74,49 @@
 <body class="antialiased selection:bg-brand-primary selection:text-white overflow-x-hidden">
 
     <!-- Navigation -->
-    <nav id="main-nav" class="fixed top-0 w-full bg-gradient-to-b from-black/70 to-transparent z-50 transition-all duration-300">
-        <div class="container mx-auto px-6 max-w-7xl h-24 flex justify-between items-center">
-            <a href="index.html" class="flex items-center gap-2 lg:-ml-[5%]">
+            <nav id="main-nav" class="fixed top-0 w-full z-50 transition-all duration-300 pointer-events-none bg-black/25">
+        <div class="container mx-auto px-6 max-w-7xl h-[90px] flex justify-between items-center relative pointer-events-auto">
+            <!-- Logo -->
+            <a href="index.html" class="flex-shrink-0 z-10 lg:-ml-[5%]">
                 <img src="assets/logo-white.svg" alt="Advrite Logo" class="h-[61px]" />
             </a>
             
-            <div class="hidden md:flex items-center gap-8 text-gray-200">
-                <a href="index.html" class="hover:text-white transition-colors duration-300">Home</a>
-                <a href="about.html" class="hover:text-white transition-colors duration-300">About</a>
-                <a href="services.html" class="hover:text-white transition-colors duration-300">Services</a>
-                <a href="portfolio.html" class="hover:text-white transition-colors duration-300">Portfolio</a>
-                <a href="contact.html" class="hover:text-white transition-colors duration-300">Contact</a>
+            <!-- Center Nav Links -->
+            <div class="hidden md:flex absolute left-1/2 -translate-x-1/2 items-center gap-12 font-medium text-[15px]">
+                <a href="index.html" class="text-brand-primary hover:text-white transition-colors duration-300">Home</a>
+                <a href="about.html" class="text-white/90 hover:text-white transition-colors duration-300">About</a>
+                <a href="services.html" class="text-white/90 hover:text-white transition-colors duration-300">Services</a>
+                <a href="portfolio.html" class="text-white/90 hover:text-white transition-colors duration-300">Portfolio</a>
+                <a href="contact.html" class="text-white/90 hover:text-white transition-colors duration-300">Contact</a>
             </div>
             
-            <div class="hidden md:block">
-                <a href="contact.html" class="bg-brand-primary text-white px-6 py-2.5 rounded-btn btn-text hover:bg-brand-hover transition-colors duration-300 inline-block shadow-md shadow-brand-primary/20">
+            <!-- CTA Right -->
+            <div class="hidden md:block flex-shrink-0 z-10">
+                <a href="contact.html" class="bg-brand-primary text-white px-7 py-2.5 rounded-full hover:bg-brand-hover transition-colors duration-300 font-medium text-[15px]">
                     Get a Quote
                 </a>
             </div>
 
             <!-- Mobile Menu Toggle -->
-            <div class="md:hidden flex items-center">
-                <button id="mobile-menu-btn" class="text-white hover:text-brand-primary p-2" aria-label="Open menu">
+            <div class="md:hidden flex items-center z-10">
+                <button id="mobile-menu-btn" class="text-white hover:text-brand-primary p-2 transition-colors duration-300" aria-label="Open menu">
                     <i class="ph ph-list text-3xl"></i>
                 </button>
             </div>
         </div>
 
         <!-- Mobile Menu Overlay -->
-        <div id="mobile-menu" class="fixed inset-0 bg-white/95 backdrop-blur-md z-40 hidden flex-col items-center justify-center pt-20 pb-8 px-6 overflow-y-auto h-screen">
-            <button id="mobile-menu-close" class="absolute top-6 right-6 text-ui-textPrimary hover:text-brand-primary p-2" aria-label="Close menu">
-                <i class="ph ph-x text-3xl"></i>
+        <div id="mobile-menu" class="fixed inset-0 bg-black/95 backdrop-blur-lg z-40 hidden flex-col items-center justify-center pt-20 pb-8 px-6 overflow-y-auto h-screen pointer-events-auto">
+            <button id="mobile-menu-close" class="absolute top-6 right-6 text-white hover:text-brand-primary p-2 transition-colors duration-300" aria-label="Close menu">
+                <i class="ph ph-x text-4xl"></i>
             </button>
-            <div class="flex flex-col items-center gap-6 text-xl text-ui-textSec w-full max-w-sm mt-8">
-                <a href="index.html" class="mobile-link hover:text-brand-primary transition-colors py-2">Home</a>
-                <a href="about.html" class="mobile-link hover:text-brand-primary transition-colors py-2">About</a>
-                <a href="services.html" class="mobile-link hover:text-brand-primary transition-colors py-2">Services</a>
-                <a href="portfolio.html" class="mobile-link hover:text-brand-primary transition-colors py-2">Portfolio</a>
-                <a href="contact.html" class="mobile-link hover:text-brand-primary transition-colors py-2">Contact</a>
-                <a href="contact.html" class="mobile-link bg-brand-primary text-white px-8 py-4 rounded-btn btn-text hover:bg-brand-hover hover:text-white transition-colors w-full text-center mt-6">
+            <div class="flex flex-col items-center justify-center space-y-8 w-full">
+                <a href="index.html" class="mobile-link text-3xl font-medium text-white hover:text-brand-primary transition-colors">Home</a>
+                <a href="about.html" class="mobile-link text-3xl font-medium text-white hover:text-brand-primary transition-colors">About</a>
+                <a href="services.html" class="mobile-link text-3xl font-medium text-white hover:text-brand-primary transition-colors">Services</a>
+                <a href="portfolio.html" class="mobile-link text-3xl font-medium text-white hover:text-brand-primary transition-colors">Portfolio</a>
+                <a href="contact.html" class="mobile-link text-3xl font-medium text-white hover:text-brand-primary transition-colors">Contact</a>
+                <a href="contact.html" class="mobile-link mt-4 bg-brand-primary text-white px-10 py-4 rounded-full font-bold text-xl hover:bg-brand-hover transition-colors w-full text-center max-w-[280px]">
                     Get a Quote
                 </a>
             </div>
@@ -393,6 +396,7 @@
 </script>
 </body>
 </html>
+
 
 
 
