@@ -1,4 +1,5 @@
 body { font-family: 'Inter', sans-serif; font-weight: 400; line-height: 1.7; background-color: #FFFFFF; color: #161B2D; }
+
 h1, h2, h3, h4, h5, h6 { font-family: 'Poppins', sans-serif; font-weight: 700; letter-spacing: -0.02em; }
 .btn-text, button[type="submit"] { font-family: 'Poppins', sans-serif; font-weight: 500; }
 nav a { font-family: 'Inter', sans-serif; font-weight: 500; }
@@ -54,3 +55,22 @@ nav a { font-family: 'Inter', sans-serif; font-weight: 500; }
 .stagger-2 { animation-delay: 200ms; }
 .stagger-3 { animation-delay: 300ms; }
 .stagger-4 { animation-delay: 400ms; }
+nav, header, body, html, #main-nav {
+    border-top: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+    border: none !important;
+}
+/* Force remove any top border/shadow from all nav elements */
+#main-nav, 
+#main-nav * {
+    border-top: 0 !important;
+    box-shadow: none !important;
+    filter: none !important;
+    drop-shadow: none !important;
+}
+body {
+    margin: 0 !important;
+    padding-top: 0 !important;
+}
+
