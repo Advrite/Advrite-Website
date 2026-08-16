@@ -66,11 +66,12 @@ nav, header, body, html, #main-nav {
 #main-nav * {
     border-top: 0 !important;
     box-shadow: none !important;
-    filter: none !important;
+    
     drop-shadow: none !important;
 }
 body {
     margin: 0 !important;
     padding-top: 0 !important;
 }
+
 
