@@ -51,17 +51,4 @@ if (contactForm) {
     });
 }
 
-// Navbar Scroll Effect (Homepage)
-const mainNav = document.getElementById('main-nav');
-if (mainNav) {
-    window.addEventListener('scroll', () => {
-        if (window.scrollY > 50) {
-            mainNav.classList.remove('bg-gradient-to-b', 'from-black/70', 'to-transparent');
-            mainNav.classList.add('bg-black/90', 'backdrop-blur-md', 'border-b', 'border-white/10');
-        } else {
-            mainNav.classList.add('bg-gradient-to-b', 'from-black/70', 'to-transparent');
-            mainNav.classList.remove('bg-black/90', 'backdrop-blur-md', 'border-b', 'border-white/10');
-        }
-    });
-}
 
