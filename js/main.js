@@ -1,4 +1,4 @@
-﻿// Mobile Menu Logic
+// Mobile Menu Logic
 const mobileMenuBtn = document.getElementById('mobile-menu-btn');
 const mobileMenuClose = document.getElementById('mobile-menu-close');
 const mobileMenu = document.getElementById('mobile-menu');
@@ -52,3 +52,22 @@ if (contactForm) {
 }
 
 
+
+
+
+
+
+// Header Scroll Behavior (Home Page Only)
+const mainNav = document.getElementById('main-nav');
+
+if (mainNav && mainNav.classList.contains('bg-transparent')) {
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 10) {
+            // Smoothly switch to darker opacity when away from top
+            mainNav.style.backgroundColor = 'rgba(0, 0, 0, 0.85)';
+        } else {
+            // Smoothly return to initial zero opacity when at the very top
+            mainNav.style.backgroundColor = 'rgba(0, 0, 0, 0)';
+        }
+    });
+}
