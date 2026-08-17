@@ -1,4 +1,4 @@
-import os
+﻿import os
 
 html_content = """<!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
@@ -107,7 +107,7 @@ html_content = """<!DOCTYPE html>
     <link rel="stylesheet" href="css/components.css">
     <link rel="stylesheet" href="css/responsive.css">
 </head>
-<body class="antialiased selection:bg-[#7A7AFF] selection:text-white overflow-x-hidden pt-24 bg-white">
+<body class="antialiased selection:bg-[#48A9E8] selection:text-white overflow-x-hidden pt-24 bg-white">
 
     <!-- Navigation -->
     <nav class="fixed top-0 w-full bg-white/95 backdrop-blur-md z-50">
@@ -116,19 +116,19 @@ html_content = """<!DOCTYPE html>
                 <img src="assets/logo.svg" alt="Advrite Logo" class="h-16" />
             </a>
             <div class="hidden md:flex items-center gap-8 text-ui-textSec">
-                <a href="index.html" class="hover:text-[#7A7AFF] transition-colors duration-300">Home</a>
-                <a href="about.html" class="hover:text-[#7A7AFF] transition-colors duration-300">About</a>
-                <a href="services.html" class="hover:text-[#7A7AFF] transition-colors duration-300">Services</a>
-                <a href="portfolio.html" class="hover:text-[#7A7AFF] transition-colors duration-300">Portfolio</a>
-                <a href="contact.html" class="text-[#7A7AFF] font-medium transition-colors duration-300">Contact</a>
+                <a href="index.html" class="hover:text-[#48A9E8] transition-colors duration-300">Home</a>
+                <a href="about.html" class="hover:text-[#48A9E8] transition-colors duration-300">About</a>
+                <a href="services.html" class="hover:text-[#48A9E8] transition-colors duration-300">Services</a>
+                <a href="portfolio.html" class="hover:text-[#48A9E8] transition-colors duration-300">Portfolio</a>
+                <a href="contact.html" class="text-[#48A9E8] font-medium transition-colors duration-300">Contact</a>
             </div>
             <div class="hidden md:block">
-                <a href="contact.html" class="bg-[#7A7AFF] text-white px-6 py-2.5 rounded-[20px] btn-text hover:bg-[#31316B] transition-colors duration-300 inline-block">
+                <a href="contact.html" class="bg-[#48A9E8] text-white px-6 py-2.5 rounded-[20px] btn-text hover:bg-[#171719] transition-colors duration-300 inline-block">
                     Start a Project
                 </a>
             </div>
             <div class="md:hidden flex items-center">
-                <button id="mobile-menu-btn" class="text-ui-textPrimary hover:text-[#7A7AFF] p-2" aria-label="Open menu">
+                <button id="mobile-menu-btn" class="text-ui-textPrimary hover:text-[#48A9E8] p-2" aria-label="Open menu">
                     <i class="ph ph-list text-3xl"></i>
                 </button>
             </div>
@@ -140,12 +140,12 @@ html_content = """<!DOCTYPE html>
                 <i class="ph ph-x text-3xl"></i>
             </button>
             <div class="flex flex-col gap-6 text-2xl font-bold text-ui-textPrimary mt-8">
-                <a href="index.html" class="mobile-link hover:text-[#7A7AFF] transition-colors py-2">Home</a>
-                <a href="about.html" class="mobile-link hover:text-[#7A7AFF] transition-colors py-2">About</a>
-                <a href="services.html" class="mobile-link hover:text-[#7A7AFF] transition-colors py-2">Services</a>
-                <a href="portfolio.html" class="mobile-link hover:text-[#7A7AFF] transition-colors py-2">Portfolio</a>
-                <a href="contact.html" class="mobile-link text-[#7A7AFF] transition-colors py-2">Contact</a>
-                <a href="contact.html" class="mobile-link bg-[#7A7AFF] text-white px-8 py-4 rounded-[20px] btn-text hover:bg-[#31316B] hover:text-white transition-colors w-full text-center mt-6">
+                <a href="index.html" class="mobile-link hover:text-[#48A9E8] transition-colors py-2">Home</a>
+                <a href="about.html" class="mobile-link hover:text-[#48A9E8] transition-colors py-2">About</a>
+                <a href="services.html" class="mobile-link hover:text-[#48A9E8] transition-colors py-2">Services</a>
+                <a href="portfolio.html" class="mobile-link hover:text-[#48A9E8] transition-colors py-2">Portfolio</a>
+                <a href="contact.html" class="mobile-link text-[#48A9E8] transition-colors py-2">Contact</a>
+                <a href="contact.html" class="mobile-link bg-[#48A9E8] text-white px-8 py-4 rounded-[20px] btn-text hover:bg-[#171719] hover:text-white transition-colors w-full text-center mt-6">
                     Start a Project
                 </a>
             </div>
@@ -155,12 +155,12 @@ html_content = """<!DOCTYPE html>
     <main>
         <!-- Contact Hero -->
         <section class="relative pt-32 pb-16 lg:pt-40 lg:pb-24 bg-white overflow-hidden">
-            <div class="absolute right-0 top-0 w-[600px] h-[600px] bg-[#F0F0FB] rounded-full blur-[100px] opacity-70 pointer-events-none -z-10 transform translate-x-1/3 -translate-y-1/3"></div>
+            <div class="absolute right-0 top-0 w-[600px] h-[600px] bg-[#F3F4F4] rounded-full blur-[100px] opacity-70 pointer-events-none -z-10 transform translate-x-1/3 -translate-y-1/3"></div>
             
             <div class="container mx-auto px-6 max-w-7xl text-center relative z-10 animate-fade-in-up stagger-1">
-                <h4 class="text-sm font-bold tracking-widest uppercase text-[#7A7AFF] mb-6">Let's Work Together</h4>
+                <h4 class="text-sm font-bold tracking-widest uppercase text-[#48A9E8] mb-6">Let's Work Together</h4>
                 <h1 class="text-5xl md:text-7xl font-bold text-ui-textPrimary mb-6 leading-[1.1] font-poppins">
-                    Have a project in <span class="relative inline-block">mind<span class="absolute -bottom-2 left-0 w-full h-1 bg-[#FFFC00]"></span></span>?
+                    Have a project in <span class="relative inline-block">mind<span class="absolute -bottom-2 left-0 w-full h-1 bg-[#FFD814]"></span></span>?
                 </h1>
                 
                 <p class="text-xl text-ui-textSec leading-relaxed max-w-2xl mx-auto font-medium mb-10">
@@ -177,16 +177,16 @@ html_content = """<!DOCTYPE html>
                     <!-- Left: Form Info -->
                     <div class="lg:col-span-5 flex flex-col gap-8 animate-fade-in-up stagger-2">
                         <div>
-                            <h4 class="text-sm font-bold tracking-widest uppercase text-[#7A7AFF] mb-4">Start a Project</h4>
+                            <h4 class="text-sm font-bold tracking-widest uppercase text-[#48A9E8] mb-4">Start a Project</h4>
                             <h2 class="text-4xl md:text-5xl font-bold text-ui-textPrimary mb-6 font-poppins">Tell us about your project.</h2>
                             <p class="text-lg text-ui-textSec leading-relaxed">Fill out the form with your details, and our strategy team will review your requirements and reach out shortly.</p>
                         </div>
-                        <div class="bg-[#F0F0FB] p-8 rounded-[20px] border border-[#D2CFF2]/50">
+                        <div class="bg-[#F3F4F4] p-8 rounded-[20px] border border-[#D2CFF2]/50">
                             <h4 class="font-bold text-ui-textPrimary mb-4">What happens next?</h4>
                             <ul class="text-ui-textSec text-sm space-y-4">
-                                <li class="flex items-start gap-3"><i class="ph-bold ph-check text-[#7A7AFF] mt-0.5 text-lg"></i> We review your details within 24 hours.</li>
-                                <li class="flex items-start gap-3"><i class="ph-bold ph-check text-[#7A7AFF] mt-0.5 text-lg"></i> We schedule a discovery call to align on goals.</li>
-                                <li class="flex items-start gap-3"><i class="ph-bold ph-check text-[#7A7AFF] mt-0.5 text-lg"></i> We present a customized proposal and timeline.</li>
+                                <li class="flex items-start gap-3"><i class="ph-bold ph-check text-[#48A9E8] mt-0.5 text-lg"></i> We review your details within 24 hours.</li>
+                                <li class="flex items-start gap-3"><i class="ph-bold ph-check text-[#48A9E8] mt-0.5 text-lg"></i> We schedule a discovery call to align on goals.</li>
+                                <li class="flex items-start gap-3"><i class="ph-bold ph-check text-[#48A9E8] mt-0.5 text-lg"></i> We present a customized proposal and timeline.</li>
                             </ul>
                         </div>
                     </div>
@@ -196,47 +196,47 @@ html_content = """<!DOCTYPE html>
                         <!-- Success State -->
                         <div id="success-state" class="absolute inset-0 bg-white z-20 hidden flex-col items-center justify-center text-center p-8">
                             <svg class="w-24 h-24 mb-6" viewBox="0 0 100 100">
-                                <circle class="success-circle" cx="50" cy="50" r="45" fill="none" stroke="#7A7AFF" stroke-width="5"/>
-                                <path class="success-check" d="M30 50 L45 65 L70 35" fill="none" stroke="#7A7AFF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <circle class="success-circle" cx="50" cy="50" r="45" fill="none" stroke="#48A9E8" stroke-width="5"/>
+                                <path class="success-check" d="M30 50 L45 65 L70 35" fill="none" stroke="#48A9E8" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                             <h3 class="text-3xl font-bold text-ui-textPrimary mb-3 font-poppins">Inquiry Received</h3>
                             <p class="text-ui-textSec mb-8 font-medium">Thank you! We've received your project details and will reach out shortly.</p>
-                            <button onclick="resetForm()" class="text-[#7A7AFF] font-bold hover:text-[#31316B] transition-colors">Send another inquiry</button>
+                            <button onclick="resetForm()" class="text-[#48A9E8] font-bold hover:text-[#171719] transition-colors">Send another inquiry</button>
                         </div>
 
                         <div id="form-container">
                             <form id="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="space-y-6">
                                 <input type="hidden" name="form-name" value="contact" />
                                 <p class="hidden">
-                                    <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+                                    <label>Donâ€™t fill this out if you're human: <input name="bot-field" /></label>
                                 </p>
 
                                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                                     <div>
-                                        <label for="name" class="block text-sm font-bold text-ui-textPrimary mb-2">Full Name <span class="text-[#7A7AFF]">*</span></label>
-                                        <input type="text" id="name" name="name" required class="w-full px-5 py-4 rounded-[16px] bg-[#F0F0FB] border border-transparent focus:outline-none focus:border-[#7A7AFF] focus:ring-1 focus:ring-[#7A7AFF] transition-all text-ui-textPrimary" placeholder="John Doe">
+                                        <label for="name" class="block text-sm font-bold text-ui-textPrimary mb-2">Full Name <span class="text-[#48A9E8]">*</span></label>
+                                        <input type="text" id="name" name="name" required class="w-full px-5 py-4 rounded-[16px] bg-[#F3F4F4] border border-transparent focus:outline-none focus:border-[#48A9E8] focus:ring-1 focus:ring-[#48A9E8] transition-all text-ui-textPrimary" placeholder="John Doe">
                                     </div>
                                     <div>
-                                        <label for="email" class="block text-sm font-bold text-ui-textPrimary mb-2">Email Address <span class="text-[#7A7AFF]">*</span></label>
-                                        <input type="email" id="email" name="email" required class="w-full px-5 py-4 rounded-[16px] bg-[#F0F0FB] border border-transparent focus:outline-none focus:border-[#7A7AFF] focus:ring-1 focus:ring-[#7A7AFF] transition-all text-ui-textPrimary" placeholder="john@company.com">
+                                        <label for="email" class="block text-sm font-bold text-ui-textPrimary mb-2">Email Address <span class="text-[#48A9E8]">*</span></label>
+                                        <input type="email" id="email" name="email" required class="w-full px-5 py-4 rounded-[16px] bg-[#F3F4F4] border border-transparent focus:outline-none focus:border-[#48A9E8] focus:ring-1 focus:ring-[#48A9E8] transition-all text-ui-textPrimary" placeholder="john@company.com">
                                     </div>
                                 </div>
                                 
                                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                                     <div>
                                         <label for="phone" class="block text-sm font-bold text-ui-textPrimary mb-2">Phone / WhatsApp</label>
-                                        <input type="tel" id="phone" name="phone" class="w-full px-5 py-4 rounded-[16px] bg-[#F0F0FB] border border-transparent focus:outline-none focus:border-[#7A7AFF] focus:ring-1 focus:ring-[#7A7AFF] transition-all text-ui-textPrimary" placeholder="+91 98765 43210">
+                                        <input type="tel" id="phone" name="phone" class="w-full px-5 py-4 rounded-[16px] bg-[#F3F4F4] border border-transparent focus:outline-none focus:border-[#48A9E8] focus:ring-1 focus:ring-[#48A9E8] transition-all text-ui-textPrimary" placeholder="+91 98765 43210">
                                     </div>
                                     <div>
                                         <label for="company" class="block text-sm font-bold text-ui-textPrimary mb-2">Company / Brand</label>
-                                        <input type="text" id="company" name="company" class="w-full px-5 py-4 rounded-[16px] bg-[#F0F0FB] border border-transparent focus:outline-none focus:border-[#7A7AFF] focus:ring-1 focus:ring-[#7A7AFF] transition-all text-ui-textPrimary" placeholder="Your Brand Name">
+                                        <input type="text" id="company" name="company" class="w-full px-5 py-4 rounded-[16px] bg-[#F3F4F4] border border-transparent focus:outline-none focus:border-[#48A9E8] focus:ring-1 focus:ring-[#48A9E8] transition-all text-ui-textPrimary" placeholder="Your Brand Name">
                                     </div>
                                 </div>
                                 
                                 <div>
                                     <label for="service" class="block text-sm font-bold text-ui-textPrimary mb-2">Service Needed</label>
                                     <div class="relative">
-                                        <select id="service" name="service" class="w-full px-5 py-4 rounded-[16px] bg-[#F0F0FB] border border-transparent focus:outline-none focus:border-[#7A7AFF] focus:ring-1 focus:ring-[#7A7AFF] transition-all text-ui-textPrimary appearance-none cursor-pointer font-medium">
+                                        <select id="service" name="service" class="w-full px-5 py-4 rounded-[16px] bg-[#F3F4F4] border border-transparent focus:outline-none focus:border-[#48A9E8] focus:ring-1 focus:ring-[#48A9E8] transition-all text-ui-textPrimary appearance-none cursor-pointer font-medium">
                                             <option value="branding">Branding</option>
                                             <option value="graphic_design">Graphic Design</option>
                                             <option value="website_design">Website Design</option>
@@ -253,23 +253,23 @@ html_content = """<!DOCTYPE html>
                                 <div>
                                     <label for="budget" class="block text-sm font-bold text-ui-textPrimary mb-2">Budget Range (INR)</label>
                                     <div class="relative">
-                                        <select id="budget" name="budget" class="w-full px-5 py-4 rounded-[16px] bg-[#F0F0FB] border border-transparent focus:outline-none focus:border-[#7A7AFF] focus:ring-1 focus:ring-[#7A7AFF] transition-all text-ui-textPrimary appearance-none cursor-pointer font-medium">
-                                            <option value="under_50k">Under ₹50,000</option>
-                                            <option value="50k_150k">₹50,000 - ₹1,50,000</option>
-                                            <option value="150k_500k">₹1,50,000 - ₹5,00,000</option>
-                                            <option value="over_500k">₹5,00,000+</option>
+                                        <select id="budget" name="budget" class="w-full px-5 py-4 rounded-[16px] bg-[#F3F4F4] border border-transparent focus:outline-none focus:border-[#48A9E8] focus:ring-1 focus:ring-[#48A9E8] transition-all text-ui-textPrimary appearance-none cursor-pointer font-medium">
+                                            <option value="under_50k">Under â‚¹50,000</option>
+                                            <option value="50k_150k">â‚¹50,000 - â‚¹1,50,000</option>
+                                            <option value="150k_500k">â‚¹1,50,000 - â‚¹5,00,000</option>
+                                            <option value="over_500k">â‚¹5,00,000+</option>
                                         </select>
                                         <i class="ph-bold ph-caret-down absolute right-5 top-1/2 transform -translate-y-1/2 text-ui-textSec pointer-events-none"></i>
                                     </div>
                                 </div>
 
                                 <div>
-                                    <label for="message" class="block text-sm font-bold text-ui-textPrimary mb-2">Project Details <span class="text-[#7A7AFF]">*</span></label>
-                                    <textarea id="message" name="message" required rows="4" class="w-full px-5 py-4 rounded-[16px] bg-[#F0F0FB] border border-transparent focus:outline-none focus:border-[#7A7AFF] focus:ring-1 focus:ring-[#7A7AFF] transition-all text-ui-textPrimary resize-none" placeholder="Tell us about your company, current challenges, and goals..."></textarea>
+                                    <label for="message" class="block text-sm font-bold text-ui-textPrimary mb-2">Project Details <span class="text-[#48A9E8]">*</span></label>
+                                    <textarea id="message" name="message" required rows="4" class="w-full px-5 py-4 rounded-[16px] bg-[#F3F4F4] border border-transparent focus:outline-none focus:border-[#48A9E8] focus:ring-1 focus:ring-[#48A9E8] transition-all text-ui-textPrimary resize-none" placeholder="Tell us about your company, current challenges, and goals..."></textarea>
                                 </div>
                                 
                                 <div class="pt-4">
-                                    <button type="submit" id="submit-btn" class="w-full bg-[#7A7AFF] text-white px-8 py-4 rounded-[20px] font-bold text-lg hover:bg-[#31316B] transition-all duration-300 flex items-center justify-center gap-2">
+                                    <button type="submit" id="submit-btn" class="w-full bg-[#48A9E8] text-white px-8 py-4 rounded-[20px] font-bold text-lg hover:bg-[#171719] transition-all duration-300 flex items-center justify-center gap-2">
                                         <span>Submit Project Inquiry</span>
                                         <i class="ph-bold ph-paper-plane-right"></i>
                                     </button>
@@ -282,42 +282,42 @@ html_content = """<!DOCTYPE html>
         </section>
 
         <!-- Contact Information -->
-        <section class="py-16 md:py-24 bg-[#F0F0FB] border-y border-[#D2CFF2]/50">
+        <section class="py-16 md:py-24 bg-[#F3F4F4] border-y border-[#D2CFF2]/50">
             <div class="container mx-auto px-6 max-w-7xl">
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                     <!-- Email -->
-                    <div class="bg-white p-8 rounded-[20px] shadow-sm animate-fade-in-up stagger-1 border border-transparent hover:border-[#7A7AFF]/30 transition-all duration-300">
-                        <div class="w-12 h-12 rounded-full bg-[#F0F0FB] flex items-center justify-center text-[#7A7AFF] mb-6">
+                    <div class="bg-white p-8 rounded-[20px] shadow-sm animate-fade-in-up stagger-1 border border-transparent hover:border-[#48A9E8]/30 transition-all duration-300">
+                        <div class="w-12 h-12 rounded-full bg-[#F3F4F4] flex items-center justify-center text-[#48A9E8] mb-6">
                             <i class="ph-fill ph-envelope-simple text-2xl"></i>
                         </div>
                         <h4 class="text-lg font-bold text-ui-textPrimary mb-1">Email Us</h4>
-                        <a href="mailto:hello@advrite.com" class="text-ui-textSec font-medium hover:text-[#7A7AFF] transition-colors">hello@advrite.com</a>
+                        <a href="mailto:hello@advrite.com" class="text-ui-textSec font-medium hover:text-[#48A9E8] transition-colors">hello@advrite.com</a>
                     </div>
                     
                     <!-- Phone -->
-                    <div class="bg-white p-8 rounded-[20px] shadow-sm animate-fade-in-up stagger-2 border border-transparent hover:border-[#7A7AFF]/30 transition-all duration-300">
-                        <div class="w-12 h-12 rounded-full bg-[#F0F0FB] flex items-center justify-center text-[#7A7AFF] mb-6">
+                    <div class="bg-white p-8 rounded-[20px] shadow-sm animate-fade-in-up stagger-2 border border-transparent hover:border-[#48A9E8]/30 transition-all duration-300">
+                        <div class="w-12 h-12 rounded-full bg-[#F3F4F4] flex items-center justify-center text-[#48A9E8] mb-6">
                             <i class="ph-fill ph-phone text-2xl"></i>
                         </div>
                         <h4 class="text-lg font-bold text-ui-textPrimary mb-1">Call Us</h4>
                         <div class="flex flex-col text-ui-textSec font-medium">
-                            <a href="tel:+917012008225" class="hover:text-[#7A7AFF] transition-colors">+91 70120 08225</a>
-                            <a href="tel:+918590008225" class="hover:text-[#7A7AFF] transition-colors">+91 85900 08225</a>
+                            <a href="tel:+917012008225" class="hover:text-[#48A9E8] transition-colors">+91 70120 08225</a>
+                            <a href="tel:+918590008225" class="hover:text-[#48A9E8] transition-colors">+91 85900 08225</a>
                         </div>
                     </div>
 
                     <!-- WhatsApp -->
-                    <div class="bg-white p-8 rounded-[20px] shadow-sm animate-fade-in-up stagger-3 border border-transparent hover:border-[#7A7AFF]/30 transition-all duration-300">
-                        <div class="w-12 h-12 rounded-full bg-[#F0F0FB] flex items-center justify-center text-[#7A7AFF] mb-6">
+                    <div class="bg-white p-8 rounded-[20px] shadow-sm animate-fade-in-up stagger-3 border border-transparent hover:border-[#48A9E8]/30 transition-all duration-300">
+                        <div class="w-12 h-12 rounded-full bg-[#F3F4F4] flex items-center justify-center text-[#48A9E8] mb-6">
                             <i class="ph-fill ph-whatsapp-logo text-2xl"></i>
                         </div>
                         <h4 class="text-lg font-bold text-ui-textPrimary mb-1">WhatsApp</h4>
-                        <a href="https://wa.me/917012008225" target="_blank" rel="noopener noreferrer" class="text-ui-textSec font-medium hover:text-[#7A7AFF] transition-colors">Chat instantly.</a>
+                        <a href="https://wa.me/917012008225" target="_blank" rel="noopener noreferrer" class="text-ui-textSec font-medium hover:text-[#48A9E8] transition-colors">Chat instantly.</a>
                     </div>
 
                     <!-- Business Hours -->
-                    <div class="bg-white p-8 rounded-[20px] shadow-sm animate-fade-in-up stagger-4 border border-transparent hover:border-[#7A7AFF]/30 transition-all duration-300">
-                        <div class="w-12 h-12 rounded-full bg-[#F0F0FB] flex items-center justify-center text-[#7A7AFF] mb-6">
+                    <div class="bg-white p-8 rounded-[20px] shadow-sm animate-fade-in-up stagger-4 border border-transparent hover:border-[#48A9E8]/30 transition-all duration-300">
+                        <div class="w-12 h-12 rounded-full bg-[#F3F4F4] flex items-center justify-center text-[#48A9E8] mb-6">
                             <i class="ph-fill ph-clock text-2xl"></i>
                         </div>
                         <h4 class="text-lg font-bold text-ui-textPrimary mb-1">Business Hours</h4>
@@ -340,13 +340,13 @@ html_content = """<!DOCTYPE html>
                     <p class="text-lg font-bold text-ui-textPrimary mb-8">Creative &bull; Branding &bull; Digital</p>
                     
                     <div class="flex gap-6 text-2xl text-ui-textSec">
-                        <a href="#" class="hover:text-[#7A7AFF] hover:-translate-y-1 transition-all duration-300" aria-label="Instagram">
+                        <a href="#" class="hover:text-[#48A9E8] hover:-translate-y-1 transition-all duration-300" aria-label="Instagram">
                             <i class="ph ph-instagram-logo"></i>
                         </a>
-                        <a href="#" class="hover:text-[#7A7AFF] hover:-translate-y-1 transition-all duration-300" aria-label="Behance">
+                        <a href="#" class="hover:text-[#48A9E8] hover:-translate-y-1 transition-all duration-300" aria-label="Behance">
                             <i class="ph ph-behance-logo"></i>
                         </a>
-                        <a href="#" class="hover:text-[#7A7AFF] hover:-translate-y-1 transition-all duration-300" aria-label="LinkedIn">
+                        <a href="#" class="hover:text-[#48A9E8] hover:-translate-y-1 transition-all duration-300" aria-label="LinkedIn">
                             <i class="ph ph-linkedin-logo"></i>
                         </a>
                     </div>
@@ -356,10 +356,10 @@ html_content = """<!DOCTYPE html>
                 <div class="flex flex-col items-start md:mx-auto">
                     <h4 class="text-sm font-bold tracking-widest uppercase text-ui-textPrimary mb-6">QUICK LINKS</h4>
                     <div class="flex flex-col gap-4 text-base font-medium text-ui-textSec">
-                        <a href="about.html" class="hover:text-[#7A7AFF] transition-colors duration-300">About Us</a>
-                        <a href="services.html" class="hover:text-[#7A7AFF] transition-colors duration-300">Services</a>
-                        <a href="portfolio.html" class="hover:text-[#7A7AFF] transition-colors duration-300">Portfolio</a>
-                        <a href="contact.html" class="hover:text-[#7A7AFF] transition-colors duration-300">Contact</a>
+                        <a href="about.html" class="hover:text-[#48A9E8] transition-colors duration-300">About Us</a>
+                        <a href="services.html" class="hover:text-[#48A9E8] transition-colors duration-300">Services</a>
+                        <a href="portfolio.html" class="hover:text-[#48A9E8] transition-colors duration-300">Portfolio</a>
+                        <a href="contact.html" class="hover:text-[#48A9E8] transition-colors duration-300">Contact</a>
                     </div>
                 </div>
 
@@ -367,17 +367,17 @@ html_content = """<!DOCTYPE html>
                 <div class="flex flex-col items-start md:ml-auto">
                     <h4 class="text-sm font-bold tracking-widest uppercase text-ui-textPrimary mb-6">CONTACT</h4>
                     <div class="flex flex-col gap-4 text-base font-medium text-ui-textSec mb-6">
-                        <a href="mailto:hello@advrite.com" class="flex items-center gap-3 hover:text-[#7A7AFF] transition-colors duration-300">
+                        <a href="mailto:hello@advrite.com" class="flex items-center gap-3 hover:text-[#48A9E8] transition-colors duration-300">
                             <i class="ph ph-envelope-simple text-xl"></i> hello@advrite.com
                         </a>
-                        <a href="tel:+917012008225" class="flex items-center gap-3 hover:text-[#7A7AFF] transition-colors duration-300">
+                        <a href="tel:+917012008225" class="flex items-center gap-3 hover:text-[#48A9E8] transition-colors duration-300">
                             <i class="ph ph-phone text-xl"></i> +91 70120 08225
                         </a>
-                        <a href="tel:+918590008225" class="flex items-center gap-3 hover:text-[#7A7AFF] transition-colors duration-300">
+                        <a href="tel:+918590008225" class="flex items-center gap-3 hover:text-[#48A9E8] transition-colors duration-300">
                             <i class="ph ph-whatsapp-logo text-xl"></i> +91 85900 08225
                         </a>
                     </div>
-                    <a href="contact.html" class="group inline-flex items-center gap-2 text-base font-semibold text-[#7A7AFF] hover:opacity-80 transition-opacity duration-300">
+                    <a href="contact.html" class="group inline-flex items-center gap-2 text-base font-semibold text-[#48A9E8] hover:opacity-80 transition-opacity duration-300">
                         Start a project <i class="ph ph-arrow-right transform group-hover:translate-x-1 transition-transform duration-300"></i>
                     </a>
                 </div>
@@ -385,7 +385,7 @@ html_content = """<!DOCTYPE html>
 
             <!-- Bottom Section -->
             <div class="w-full text-center md:text-left mb-6">
-                <span class="text-lg md:text-xl font-bold"><span class="text-[#171A2B]">Let's create something</span> <span class="text-[#7A7AFF]">memorable.</span></span>
+                <span class="text-lg md:text-xl font-bold"><span class="text-[#171A2B]">Let's create something</span> <span class="text-[#48A9E8]">memorable.</span></span>
             </div>
             
             <div class="w-full h-px bg-gray-200 mb-6"></div>
@@ -395,8 +395,8 @@ html_content = """<!DOCTYPE html>
                     <span>&copy; 2026 Advrite. All Rights Reserved.</span>
                 </div>
                 <div class="flex gap-8">
-                    <a href="#" class="hover:text-[#7A7AFF] transition-colors duration-300">Privacy Policy</a>
-                    <a href="#" class="hover:text-[#7A7AFF] transition-colors duration-300">Terms</a>
+                    <a href="#" class="hover:text-[#48A9E8] transition-colors duration-300">Privacy Policy</a>
+                    <a href="#" class="hover:text-[#48A9E8] transition-colors duration-300">Terms</a>
                 </div>
             </div>
         </div>
