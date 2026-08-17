@@ -1,4 +1,4 @@
-import os
+﻿import os
 
 file_path = "contact.html"
 with open(file_path, 'r', encoding='utf-8') as f:
@@ -28,8 +28,8 @@ if start_idx != -1 and end_idx != -1:
                             <!-- Email -->
                             <div>
                                 <h4 class="text-sm font-bold tracking-widest uppercase text-ui-textPrimary mb-4">Email Us</h4>
-                                <a href="mailto:hello@advrite.com" class="flex items-center gap-3 text-lg font-medium text-ui-textSec hover:text-[#7A7AFF] transition-colors duration-300">
-                                    <i class="ph ph-envelope-simple text-2xl text-[#7A7AFF]"></i> hello@advrite.com
+                                <a href="mailto:hello@advrite.com" class="flex items-center gap-3 text-lg font-medium text-ui-textSec hover:text-[#48A9E8] transition-colors duration-300">
+                                    <i class="ph ph-envelope-simple text-2xl text-[#48A9E8]"></i> hello@advrite.com
                                 </a>
                             </div>
                             
@@ -37,11 +37,11 @@ if start_idx != -1 and end_idx != -1:
                             <div>
                                 <h4 class="text-sm font-bold tracking-widest uppercase text-ui-textPrimary mb-4">Call Us</h4>
                                 <div class="flex flex-col gap-4 text-lg font-medium text-ui-textSec">
-                                    <a href="tel:+917012008225" class="flex items-center gap-3 hover:text-[#7A7AFF] transition-colors duration-300">
-                                        <i class="ph ph-phone text-2xl text-[#7A7AFF]"></i> +91 70120 08225
+                                    <a href="tel:+917012008225" class="flex items-center gap-3 hover:text-[#48A9E8] transition-colors duration-300">
+                                        <i class="ph ph-phone text-2xl text-[#48A9E8]"></i> +91 70120 08225
                                     </a>
-                                    <a href="tel:+918590008225" class="flex items-center gap-3 hover:text-[#7A7AFF] transition-colors duration-300">
-                                        <i class="ph ph-whatsapp-logo text-2xl text-[#7A7AFF]"></i> +91 85900 08225
+                                    <a href="tel:+918590008225" class="flex items-center gap-3 hover:text-[#48A9E8] transition-colors duration-300">
+                                        <i class="ph ph-whatsapp-logo text-2xl text-[#48A9E8]"></i> +91 85900 08225
                                     </a>
                                 </div>
                             </div>
@@ -56,13 +56,13 @@ if start_idx != -1 and end_idx != -1:
                             <div>
                                 <h4 class="text-sm font-bold tracking-widest uppercase text-ui-textPrimary mb-4">Connect Socially</h4>
                                 <div class="flex gap-6 text-2xl text-ui-textSec">
-                                    <a href="#" class="hover:text-[#7A7AFF] hover:-translate-y-1 transition-all duration-300" aria-label="Instagram">
+                                    <a href="#" class="hover:text-[#48A9E8] hover:-translate-y-1 transition-all duration-300" aria-label="Instagram">
                                         <i class="ph ph-instagram-logo"></i>
                                     </a>
-                                    <a href="#" class="hover:text-[#7A7AFF] hover:-translate-y-1 transition-all duration-300" aria-label="Behance">
+                                    <a href="#" class="hover:text-[#48A9E8] hover:-translate-y-1 transition-all duration-300" aria-label="Behance">
                                         <i class="ph ph-behance-logo"></i>
                                     </a>
-                                    <a href="#" class="hover:text-[#7A7AFF] hover:-translate-y-1 transition-all duration-300" aria-label="LinkedIn">
+                                    <a href="#" class="hover:text-[#48A9E8] hover:-translate-y-1 transition-all duration-300" aria-label="LinkedIn">
                                         <i class="ph ph-linkedin-logo"></i>
                                     </a>
                                 </div>
@@ -80,7 +80,7 @@ if start_idx != -1 and end_idx != -1:
                             </svg>
                             <h3 class="text-3xl font-bold text-ui-textPrimary mb-3">Inquiry Received</h3>
                             <p class="text-ui-textSec mb-8 font-medium">Thank you! Our strategy team will review your project details and reach out shortly.</p>
-                            <button onclick="resetForm()" class="text-[#7A7AFF] font-bold hover:underline">Send another inquiry</button>
+                            <button onclick="resetForm()" class="text-[#48A9E8] font-bold hover:underline">Send another inquiry</button>
                         </div>
 
                         <div id="form-container">
@@ -90,18 +90,18 @@ if start_idx != -1 and end_idx != -1:
                             <form id="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="space-y-6">
                                 <input type="hidden" name="form-name" value="contact" />
                                 <p class="hidden">
-                                    <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+                                    <label>Donâ€™t fill this out if you're human: <input name="bot-field" /></label>
                                 </p>
 
                                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                                     <div>
-                                        <label for="name" class="block text-sm font-bold text-ui-textPrimary mb-2">Full Name <span class="text-[#7A7AFF]">*</span></label>
-                                        <input type="text" id="name" name="name" class="w-full px-5 py-4 rounded-xl bg-white border border-transparent focus:outline-none focus:border-[#7A7AFF] focus:ring-1 focus:ring-[#7A7AFF] transition-all text-ui-textPrimary" placeholder="John Doe">
+                                        <label for="name" class="block text-sm font-bold text-ui-textPrimary mb-2">Full Name <span class="text-[#48A9E8]">*</span></label>
+                                        <input type="text" id="name" name="name" class="w-full px-5 py-4 rounded-xl bg-white border border-transparent focus:outline-none focus:border-[#48A9E8] focus:ring-1 focus:ring-[#48A9E8] transition-all text-ui-textPrimary" placeholder="John Doe">
                                         <span class="error-msg text-red-500 text-sm hidden mt-1">Please enter your name.</span>
                                     </div>
                                     <div>
-                                        <label for="email" class="block text-sm font-bold text-ui-textPrimary mb-2">Email Address <span class="text-[#7A7AFF]">*</span></label>
-                                        <input type="email" id="email" name="email" class="w-full px-5 py-4 rounded-xl bg-white border border-transparent focus:outline-none focus:border-[#7A7AFF] focus:ring-1 focus:ring-[#7A7AFF] transition-all text-ui-textPrimary" placeholder="john@company.com">
+                                        <label for="email" class="block text-sm font-bold text-ui-textPrimary mb-2">Email Address <span class="text-[#48A9E8]">*</span></label>
+                                        <input type="email" id="email" name="email" class="w-full px-5 py-4 rounded-xl bg-white border border-transparent focus:outline-none focus:border-[#48A9E8] focus:ring-1 focus:ring-[#48A9E8] transition-all text-ui-textPrimary" placeholder="john@company.com">
                                         <span class="error-msg text-red-500 text-sm hidden mt-1">Please enter a valid email address.</span>
                                     </div>
                                 </div>
@@ -109,7 +109,7 @@ if start_idx != -1 and end_idx != -1:
                                 <div>
                                     <label for="service" class="block text-sm font-bold text-ui-textPrimary mb-2">Primary Service Needed</label>
                                     <div class="relative">
-                                        <select id="service" name="service" class="w-full px-5 py-4 rounded-xl bg-white border border-transparent focus:outline-none focus:border-[#7A7AFF] focus:ring-1 focus:ring-[#7A7AFF] transition-all text-ui-textPrimary appearance-none cursor-pointer font-medium">
+                                        <select id="service" name="service" class="w-full px-5 py-4 rounded-xl bg-white border border-transparent focus:outline-none focus:border-[#48A9E8] focus:ring-1 focus:ring-[#48A9E8] transition-all text-ui-textPrimary appearance-none cursor-pointer font-medium">
                                             <option value="branding">Brand Identity Design</option>
                                             <option value="uiux">UI/UX Design</option>
                                             <option value="webdev">Web Development (Next.js / Webflow)</option>
@@ -123,7 +123,7 @@ if start_idx != -1 and end_idx != -1:
                                 <div>
                                     <label for="budget" class="block text-sm font-bold text-ui-textPrimary mb-2">Estimated Budget</label>
                                     <div class="relative">
-                                        <select id="budget" name="budget" class="w-full px-5 py-4 rounded-xl bg-white border border-transparent focus:outline-none focus:border-[#7A7AFF] focus:ring-1 focus:ring-[#7A7AFF] transition-all text-ui-textPrimary appearance-none cursor-pointer font-medium">
+                                        <select id="budget" name="budget" class="w-full px-5 py-4 rounded-xl bg-white border border-transparent focus:outline-none focus:border-[#48A9E8] focus:ring-1 focus:ring-[#48A9E8] transition-all text-ui-textPrimary appearance-none cursor-pointer font-medium">
                                             <option value="under_5k">Under $5,000</option>
                                             <option value="5k_15k">$5,000 - $15,000</option>
                                             <option value="15k_30k">$15,000 - $30,000</option>
@@ -134,13 +134,13 @@ if start_idx != -1 and end_idx != -1:
                                 </div>
 
                                 <div>
-                                    <label for="message" class="block text-sm font-bold text-ui-textPrimary mb-2">Project Details <span class="text-[#7A7AFF]">*</span></label>
-                                    <textarea id="message" name="message" rows="4" class="w-full px-5 py-4 rounded-xl bg-white border border-transparent focus:outline-none focus:border-[#7A7AFF] focus:ring-1 focus:ring-[#7A7AFF] transition-all text-ui-textPrimary resize-none" placeholder="Tell us about your company, current challenges, and goals..."></textarea>
+                                    <label for="message" class="block text-sm font-bold text-ui-textPrimary mb-2">Project Details <span class="text-[#48A9E8]">*</span></label>
+                                    <textarea id="message" name="message" rows="4" class="w-full px-5 py-4 rounded-xl bg-white border border-transparent focus:outline-none focus:border-[#48A9E8] focus:ring-1 focus:ring-[#48A9E8] transition-all text-ui-textPrimary resize-none" placeholder="Tell us about your company, current challenges, and goals..."></textarea>
                                     <span class="error-msg text-red-500 text-sm hidden mt-1">Please provide some project details.</span>
                                 </div>
                                 
                                 <div class="pt-2">
-                                    <button type="submit" id="submit-btn" class="w-full bg-ui-textPrimary text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-[#7A7AFF] transition-all duration-300 transform hover:-translate-y-1 flex items-center justify-center gap-2">
+                                    <button type="submit" id="submit-btn" class="w-full bg-ui-textPrimary text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-[#48A9E8] transition-all duration-300 transform hover:-translate-y-1 flex items-center justify-center gap-2">
                                         <span>Send Inquiry</span>
                                         <i class="ph-bold ph-paper-plane-right"></i>
                                     </button>

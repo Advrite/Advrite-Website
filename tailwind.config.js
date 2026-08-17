@@ -1,4 +1,4 @@
-/** @type {import('tailwindcss').Config} */
+﻿/** @type {import('tailwindcss').Config} */
 export default {
   content: [
     "./index.html",
@@ -8,9 +8,9 @@ export default {
     extend: {
       colors: {
         brand: {
-          primary: '#7A7AFF',
-          hover: '#31316B',
-          accent: '#7A7AFF',
+          primary: '#48A9E8',
+          hover: '#171719',
+          accent: '#48A9E8',
         },
         ui: {
           bg: '#FFFFFF',
