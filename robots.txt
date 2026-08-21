@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://advrite.com/sitemap.xml
+Sitemap: https://www.advrite.com/sitemap.xml
