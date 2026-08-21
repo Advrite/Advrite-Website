@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>https://www.advrite.com/</loc>
+        <loc>https://advrite.com/</loc>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://www.advrite.com/about</loc>
+        <loc>https://advrite.com/about</loc>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://www.advrite.com/services</loc>
+        <loc>https://advrite.com/services</loc>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://www.advrite.com/portfolio</loc>
+        <loc>https://advrite.com/portfolio</loc>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://www.advrite.com/contact</loc>
+        <loc>https://advrite.com/contact</loc>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
