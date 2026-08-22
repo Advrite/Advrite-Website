@@ -10,24 +10,50 @@
     <link rel="apple-touch-icon" href="public/apple-touch-icon.png">
 
     <title>Services | Advrite</title>
-    <meta name="description" content="Explore Advrite’s creative and digital services including branding, website design, graphic design, video editing, motion graphics, and digital marketing.">
+    <meta name="description" content="Explore Advrite’s creative services including branding, website design, digital marketing, video production, and visual communication.">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://advrite.com/services.html" />
+    <link rel="canonical" href="https://advrite.com/services" />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://advrite.com/services.html">
+    <meta property="og:url" content="https://advrite.com/services">
     <meta property="og:title" content="Services | Advrite">
-    <meta property="og:description" content="Explore Advrite’s creative and digital services including branding, website design, graphic design, video editing, motion graphics, and digital marketing.">
+    <meta property="og:description" content="Explore Advrite’s creative services including branding, website design, digital marketing, video production, and visual communication.">
     <meta property="og:image" content="https://advrite.com/assets/og-image.jpg">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://advrite.com/services.html">
+    <meta property="twitter:url" content="https://advrite.com/services">
     <meta property="twitter:title" content="Services | Advrite">
-    <meta property="twitter:description" content="Explore Advrite’s creative and digital services including branding, website design, graphic design, video editing, motion graphics, and digital marketing.">
+    <meta property="twitter:description" content="Explore Advrite’s creative services including branding, website design, digital marketing, video production, and visual communication.">
     <meta property="twitter:image" content="https://advrite.com/assets/og-image.jpg">
 
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://advrite.com/services#webpage",
+      "url": "https://advrite.com/services",
+      "name": "Services | Advrite",
+      "description": "Explore Advrite’s creative services including branding, website design, digital marketing, video production, and visual communication.",
+      "isPartOf": {
+        "@type": "Organization",
+        "@id": "https://advrite.com/#organization",
+        "name": "Advrite",
+        "url": "https://advrite.com/",
+        "logo": "https://advrite.com/assets/logo.svg",
+        "sameAs": [
+          "https://instagram.com/advrite",
+          "https://behance.net/advrite",
+          "https://linkedin.com/company/advrite"
+        ]
+      }
+    }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <script src="https://cdn.tailwindcss.com"></script>
@@ -51,9 +77,7 @@
 <body class="antialiased selection:bg-brand-primary selection:text-white overflow-x-hidden pt-24">
 
     <!-- Navigation -->
-        <!-- Navigation -->
-        <!-- Navigation -->
-                    <nav id="main-nav" class="fixed top-0 w-full z-50 transition-all duration-300 pointer-events-none bg-white border-b border-black/25">
+    <nav id="main-nav" class="fixed top-0 w-full z-50 transition-all duration-300 pointer-events-none bg-white border-b border-black/25">
         <div class="container mx-auto px-6 max-w-7xl h-[90px] flex justify-between items-center relative pointer-events-auto">
             <!-- Logo -->
             <a href="index.html" class="flex-shrink-0 z-10 lg:-ml-[5%]">
@@ -64,7 +88,7 @@
             <div class="hidden md:flex absolute left-1/2 -translate-x-1/2 items-center gap-12 font-medium text-[15px]">
                 <a href="index.html" class="text-ui-textPrimary hover:text-[#FFD600] transition-colors duration-300">Home</a>
                 <a href="about.html" class="text-ui-textPrimary hover:text-[#FFD600] transition-colors duration-300">About</a>
-                <a href="services.html" class="text-brand-primary hover:text-[#FFD600] transition-colors duration-300">Services</a>
+                <a href="/services" class="text-brand-primary hover:text-[#FFD600] transition-colors duration-300">Services</a>
                 <a href="portfolio.html" class="text-ui-textPrimary hover:text-[#FFD600] transition-colors duration-300">Portfolio</a>
                 <a href="contact.html" class="text-ui-textPrimary hover:text-[#FFD600] transition-colors duration-300">Contact</a>
             </div>
@@ -92,7 +116,7 @@
             <div class="flex flex-col items-center justify-center space-y-8 w-full">
                 <a href="index.html" class="mobile-link text-3xl font-medium text-ui-textPrimary hover:text-[#FFD600] transition-colors">Home</a>
                 <a href="about.html" class="mobile-link text-3xl font-medium text-ui-textPrimary hover:text-[#FFD600] transition-colors">About</a>
-                <a href="services.html" class="mobile-link text-3xl font-medium text-brand-primary hover:text-[#FFD600] transition-colors">Services</a>
+                <a href="/services" class="mobile-link text-3xl font-medium text-brand-primary hover:text-[#FFD600] transition-colors">Services</a>
                 <a href="portfolio.html" class="mobile-link text-3xl font-medium text-ui-textPrimary hover:text-[#FFD600] transition-colors">Portfolio</a>
                 <a href="contact.html" class="mobile-link text-3xl font-medium text-ui-textPrimary hover:text-[#FFD600] transition-colors">Contact</a>
                 <a href="contact.html" class="mobile-link mt-4 bg-[#48A9E8] text-white px-10 py-4 rounded-full font-bold text-xl hover:bg-[#FFD600] hover:text-[#14182B] transition-colors w-full text-center max-w-[280px]">
@@ -111,60 +135,94 @@
                 </div>
                 
                 <h1 class="text-4xl md:text-6xl font-bold mb-8 text-ui-textPrimary leading-tight">
-                    Our Services
+                    Services
                 </h1>
                 
                 <p class="text-xl text-ui-textSec max-w-2xl mx-auto leading-relaxed mb-0 font-inter">
-                    Creative solutions designed to elevate your brand.
+                    Strategic, end-to-end creative solutions designed to build memorable brands and accelerate growth.
                 </p>
             </div>
         </section>
 
-        <!-- Services -->
+        <!-- Services Grid -->
         <section class="py-24 bg-[#FFFFFF]">
-            <div class="container mx-auto px-6">
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 w-full lg:w-[80%] mx-auto">
-                    <div class="service-card relative overflow-hidden bg-[#F8F9FA] p-6 rounded-card transition-all duration-[350ms] ease-out shadow-sm border border-transparent hover:border-[#FFD600]/10">
-                        <div class="service-icon-wrapper w-14 h-14 rounded-2xl bg-white flex items-center justify-center text-brand-primary mb-6 relative z-10 transition-transform duration-[350ms] ease-out">
+            <div class="container mx-auto px-6 max-w-7xl">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Brand Identity -->
+                    <div class="service-card relative overflow-hidden bg-[#F8F9FA] p-8 rounded-card transition-all duration-[350ms] ease-out shadow-sm border border-transparent hover:border-[#FFD600]/20 hover:shadow-md">
+                        <div class="service-icon-wrapper w-14 h-14 rounded-2xl bg-white flex items-center justify-center text-brand-primary mb-6 relative z-10 transition-transform duration-[350ms] ease-out shadow-sm">
+                            <i class="ph ph-palette text-3xl"></i>
+                        </div>
+                        <h2 class="service-title text-xl font-bold mb-3 text-ui-textPrimary relative z-10 transition-colors duration-[350ms]">Brand Identity</h2>
+                        <p class="service-desc text-ui-textSec relative z-10 transition-colors duration-[350ms] text-sm leading-relaxed">
+                            Strategic logo systems, brand guidelines, typography, and cohesive visual identities crafted to distinguish your brand in competitive markets.
+                        </p>
+                    </div>
+
+                    <!-- Website Design -->
+                    <div class="service-card relative overflow-hidden bg-[#F8F9FA] p-8 rounded-card transition-all duration-[350ms] ease-out shadow-sm border border-transparent hover:border-[#FFD600]/20 hover:shadow-md">
+                        <div class="service-icon-wrapper w-14 h-14 rounded-2xl bg-white flex items-center justify-center text-brand-primary mb-6 relative z-10 transition-transform duration-[350ms] ease-out shadow-sm">
                             <i class="ph ph-desktop text-3xl"></i>
                         </div>
-                        <h3 class="service-title text-xl font-bold mb-3 text-ui-textPrimary relative z-10 transition-colors duration-[350ms]">Website Design</h3>
-                        <p class="service-desc text-ui-textSec relative z-10 transition-colors duration-[350ms] text-sm">Modern websites built to perform.</p>
+                        <h2 class="service-title text-xl font-bold mb-3 text-ui-textPrimary relative z-10 transition-colors duration-[350ms]">Website Design</h2>
+                        <p class="service-desc text-ui-textSec relative z-10 transition-colors duration-[350ms] text-sm leading-relaxed">
+                            Bespoke, responsive, and high-performance websites and user interfaces engineered to deliver seamless user experiences and drive conversions.
+                        </p>
                     </div>
-                    <div class="service-card relative overflow-hidden bg-[#F8F9FA] p-6 rounded-card transition-all duration-[350ms] ease-out shadow-sm border border-transparent hover:border-[#FFD600]/10">
-                        <div class="service-icon-wrapper w-14 h-14 rounded-2xl bg-white flex items-center justify-center text-brand-primary mb-6 relative z-10 transition-transform duration-[350ms] ease-out">
-                            <i class="ph ph-bezier-curve text-3xl"></i>
-                        </div>
-                        <h3 class="service-title text-xl font-bold mb-3 text-ui-textPrimary relative z-10 transition-colors duration-[350ms]">Graphic Design</h3>
-                        <p class="service-desc text-ui-textSec relative z-10 transition-colors duration-[350ms] text-sm">Distinctive visuals for your brand.</p>
-                    </div>
-                    <div class="service-card relative overflow-hidden bg-[#F8F9FA] p-6 rounded-card transition-all duration-[350ms] ease-out shadow-sm border border-transparent hover:border-[#FFD600]/10">
-                        <div class="service-icon-wrapper w-14 h-14 rounded-2xl bg-white flex items-center justify-center text-brand-primary mb-6 relative z-10 transition-transform duration-[350ms] ease-out">
-                            <i class="ph ph-film-strip text-3xl"></i>
-                        </div>
-                        <h3 class="service-title text-xl font-bold mb-3 text-ui-textPrimary relative z-10 transition-colors duration-[350ms]">Video Editing</h3>
-                        <p class="service-desc text-ui-textSec relative z-10 transition-colors duration-[350ms] text-sm">Stories crafted to make an impact.</p>
-                    </div>
-                    <div class="service-card relative overflow-hidden bg-[#F8F9FA] p-6 rounded-card transition-all duration-[350ms] ease-out shadow-sm border border-transparent hover:border-[#FFD600]/10">
-                        <div class="service-icon-wrapper w-14 h-14 rounded-2xl bg-white flex items-center justify-center text-brand-primary mb-6 relative z-10 transition-transform duration-[350ms] ease-out">
-                            <i class="ph ph-video-camera text-3xl"></i>
-                        </div>
-                        <h3 class="service-title text-xl font-bold mb-3 text-ui-textPrimary relative z-10 transition-colors duration-[350ms]">Motion Graphics</h3>
-                        <p class="service-desc text-ui-textSec relative z-10 transition-colors duration-[350ms] text-sm">Motion that brings ideas to life.</p>
-                    </div>
-                    <div class="service-card relative overflow-hidden bg-[#F8F9FA] p-6 rounded-card transition-all duration-[350ms] ease-out shadow-sm border border-transparent hover:border-[#FFD600]/10">
-                        <div class="service-icon-wrapper w-14 h-14 rounded-2xl bg-white flex items-center justify-center text-brand-primary mb-6 relative z-10 transition-transform duration-[350ms] ease-out">
+
+                    <!-- Digital Marketing -->
+                    <div class="service-card relative overflow-hidden bg-[#F8F9FA] p-8 rounded-card transition-all duration-[350ms] ease-out shadow-sm border border-transparent hover:border-[#FFD600]/20 hover:shadow-md">
+                        <div class="service-icon-wrapper w-14 h-14 rounded-2xl bg-white flex items-center justify-center text-brand-primary mb-6 relative z-10 transition-transform duration-[350ms] ease-out shadow-sm">
                             <i class="ph ph-megaphone text-3xl"></i>
                         </div>
-                        <h3 class="service-title text-xl font-bold mb-3 text-ui-textPrimary relative z-10 transition-colors duration-[350ms]">Digital Marketing</h3>
-                        <p class="service-desc text-ui-textSec relative z-10 transition-colors duration-[350ms] text-sm">Strategies that connect and grow.</p>
+                        <h2 class="service-title text-xl font-bold mb-3 text-ui-textPrimary relative z-10 transition-colors duration-[350ms]">Digital Marketing</h2>
+                        <p class="service-desc text-ui-textSec relative z-10 transition-colors duration-[350ms] text-sm leading-relaxed">
+                            Targeted campaigns, social media strategy, content marketing, and growth-focused digital initiatives that connect with the right audience.
+                        </p>
                     </div>
-                    <div class="service-card relative overflow-hidden bg-[#F8F9FA] p-6 rounded-card transition-all duration-[350ms] ease-out shadow-sm border border-transparent hover:border-[#FFD600]/10">
-                        <div class="service-icon-wrapper w-14 h-14 rounded-2xl bg-white flex items-center justify-center text-brand-primary mb-6 relative z-10 transition-transform duration-[350ms] ease-out">
+
+                    <!-- Video Production -->
+                    <div class="service-card relative overflow-hidden bg-[#F8F9FA] p-8 rounded-card transition-all duration-[350ms] ease-out shadow-sm border border-transparent hover:border-[#FFD600]/20 hover:shadow-md">
+                        <div class="service-icon-wrapper w-14 h-14 rounded-2xl bg-white flex items-center justify-center text-brand-primary mb-6 relative z-10 transition-transform duration-[350ms] ease-out shadow-sm">
+                            <i class="ph ph-film-strip text-3xl"></i>
+                        </div>
+                        <h2 class="service-title text-xl font-bold mb-3 text-ui-textPrimary relative z-10 transition-colors duration-[350ms]">Video Production</h2>
+                        <p class="service-desc text-ui-textSec relative z-10 transition-colors duration-[350ms] text-sm leading-relaxed">
+                            End-to-end commercial video production, editing, and cinematic storytelling crafted to captivate audiences and deliver memorable brand narratives.
+                        </p>
+                    </div>
+
+                    <!-- Graphic Design -->
+                    <div class="service-card relative overflow-hidden bg-[#F8F9FA] p-8 rounded-card transition-all duration-[350ms] ease-out shadow-sm border border-transparent hover:border-[#FFD600]/20 hover:shadow-md">
+                        <div class="service-icon-wrapper w-14 h-14 rounded-2xl bg-white flex items-center justify-center text-brand-primary mb-6 relative z-10 transition-transform duration-[350ms] ease-out shadow-sm">
+                            <i class="ph ph-bezier-curve text-3xl"></i>
+                        </div>
+                        <h2 class="service-title text-xl font-bold mb-3 text-ui-textPrimary relative z-10 transition-colors duration-[350ms]">Graphic Design</h2>
+                        <p class="service-desc text-ui-textSec relative z-10 transition-colors duration-[350ms] text-sm leading-relaxed">
+                            Distinctive marketing collateral, print design, packaging, and custom visual assets tailored to establish an unmistakable visual presence.
+                        </p>
+                    </div>
+
+                    <!-- Motion Graphics -->
+                    <div class="service-card relative overflow-hidden bg-[#F8F9FA] p-8 rounded-card transition-all duration-[350ms] ease-out shadow-sm border border-transparent hover:border-[#FFD600]/20 hover:shadow-md">
+                        <div class="service-icon-wrapper w-14 h-14 rounded-2xl bg-white flex items-center justify-center text-brand-primary mb-6 relative z-10 transition-transform duration-[350ms] ease-out shadow-sm">
+                            <i class="ph ph-sparkle text-3xl"></i>
+                        </div>
+                        <h2 class="service-title text-xl font-bold mb-3 text-ui-textPrimary relative z-10 transition-colors duration-[350ms]">Motion Graphics</h2>
+                        <p class="service-desc text-ui-textSec relative z-10 transition-colors duration-[350ms] text-sm leading-relaxed">
+                            Dynamic 2D/3D animations, title sequences, UI motion, and visual effects that bring concepts to life with movement, energy, and precision.
+                        </p>
+                    </div>
+
+                    <!-- Photography & Videography -->
+                    <div class="service-card relative overflow-hidden bg-[#F8F9FA] p-8 rounded-card transition-all duration-[350ms] ease-out shadow-sm border border-transparent hover:border-[#FFD600]/20 hover:shadow-md md:col-span-2 lg:col-span-1">
+                        <div class="service-icon-wrapper w-14 h-14 rounded-2xl bg-white flex items-center justify-center text-brand-primary mb-6 relative z-10 transition-transform duration-[350ms] ease-out shadow-sm">
                             <i class="ph ph-camera text-3xl"></i>
                         </div>
-                        <h3 class="service-title text-xl font-bold mb-3 text-ui-textPrimary relative z-10 transition-colors duration-[350ms]">Photography</h3>
-                        <p class="service-desc text-ui-textSec relative z-10 transition-colors duration-[350ms] text-sm">Visuals that capture your brand.</p>
+                        <h2 class="service-title text-xl font-bold mb-3 text-ui-textPrimary relative z-10 transition-colors duration-[350ms]">Photography & Videography</h2>
+                        <p class="service-desc text-ui-textSec relative z-10 transition-colors duration-[350ms] text-sm leading-relaxed">
+                            Professional brand photography and on-location video shoots delivering high-impact, premium visual content for digital and physical platforms.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -172,7 +230,7 @@
 
         <!-- Our Process -->
         <section class="py-24 bg-ui-bg">
-            <div class="container mx-auto px-6">
+            <div class="container mx-auto px-6 max-w-6xl">
                 <h2 class="text-4xl font-bold mb-24 text-center text-ui-textPrimary">How We Work</h2>
                 <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
                     <div class="text-center group cursor-pointer">
@@ -180,28 +238,28 @@
                             <span class="sr-only">Step </span>1
                         </div>
                         <h3 class="font-bold text-lg mb-2 relative inline-block after:content-[''] after:absolute after:-bottom-1 after:left-1/2 after:-translate-x-1/2 after:w-0 after:h-[2px] after:bg-[#FFD600] after:transition-all after:duration-300 group-hover:after:w-8 group-hover:text-[#FFD600] transition-colors duration-300">Discovery</h3>
-                        <p class="text-ui-textSec text-sm">We understand your brand and goals.</p>
+                        <p class="text-ui-textSec text-sm">We understand your brand, audience, and goals.</p>
                     </div>
                     <div class="text-center group cursor-pointer">
                         <div class="w-20 h-20 mx-auto rounded-full bg-ui-bgLightLav flex items-center justify-center text-brand-primary group-hover:text-[#FFD600] transition-colors duration-300 text-3xl mb-8">
                             <span class="sr-only">Step </span>2
                         </div>
                         <h3 class="font-bold text-lg mb-2 relative inline-block after:content-[''] after:absolute after:-bottom-1 after:left-1/2 after:-translate-x-1/2 after:w-0 after:h-[2px] after:bg-[#FFD600] after:transition-all after:duration-300 group-hover:after:w-8 group-hover:text-[#FFD600] transition-colors duration-300">Strategy</h3>
-                        <p class="text-ui-textSec text-sm">We build a clear creative plan.</p>
+                        <p class="text-ui-textSec text-sm">We build a clear, results-driven creative plan.</p>
                     </div>
                     <div class="text-center group cursor-pointer">
                         <div class="w-20 h-20 mx-auto rounded-full bg-ui-bgLightLav flex items-center justify-center text-brand-primary group-hover:text-[#FFD600] transition-colors duration-300 text-3xl mb-8">
                             <span class="sr-only">Step </span>3
                         </div>
                         <h3 class="font-bold text-lg mb-2 relative inline-block after:content-[''] after:absolute after:-bottom-1 after:left-1/2 after:-translate-x-1/2 after:w-0 after:h-[2px] after:bg-[#FFD600] after:transition-all after:duration-300 group-hover:after:w-8 group-hover:text-[#FFD600] transition-colors duration-300">Creation</h3>
-                        <p class="text-ui-textSec text-sm">We turn ideas into impactful work.</p>
+                        <p class="text-ui-textSec text-sm">We craft tailored designs and experiences.</p>
                     </div>
                     <div class="text-center group cursor-pointer">
                         <div class="w-20 h-20 mx-auto rounded-full bg-ui-bgLightLav flex items-center justify-center text-brand-primary group-hover:text-[#FFD600] transition-colors duration-300 text-3xl mb-8">
                             <span class="sr-only">Step </span>4
                         </div>
                         <h3 class="font-bold text-lg mb-2 relative inline-block after:content-[''] after:absolute after:-bottom-1 after:left-1/2 after:-translate-x-1/2 after:w-0 after:h-[2px] after:bg-[#FFD600] after:transition-all after:duration-300 group-hover:after:w-8 group-hover:text-[#FFD600] transition-colors duration-300">Launch</h3>
-                        <p class="text-ui-textSec text-sm">We deliver and bring it to life.</p>
+                        <p class="text-ui-textSec text-sm">We deliver high-impact assets ready to perform.</p>
                     </div>
                 </div>
             </div>
@@ -254,7 +312,7 @@
                             <span>About</span>
                             <i class="ph ph-arrow-right text-[#48A9E8] opacity-70 group-hover:opacity-100 group-hover:translate-x-1 transition-all"></i>
                         </a>
-                        <a href="services.html" class="flex justify-between items-center py-4 border-b border-gray-200 text-base font-medium text-ui-textSec hover:text-[#FFD600] transition-colors group">
+                        <a href="/services" class="flex justify-between items-center py-4 border-b border-gray-200 text-base font-medium text-ui-textSec hover:text-[#FFD600] transition-colors group">
                             <span>Services</span>
                             <i class="ph ph-arrow-right text-[#48A9E8] opacity-70 group-hover:opacity-100 group-hover:translate-x-1 transition-all"></i>
                         </a>
@@ -292,23 +350,5 @@
         </div>
     </div>
     <script src="js/main.js"></script>
-<script src="js/main.js"></script></body>
+</body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
