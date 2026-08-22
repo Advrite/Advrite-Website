@@ -1,4 +1,8 @@
 User-agent: *
 Allow: /
+Allow: /about.html
+Allow: /services.html
+Allow: /portfolio.html
+Allow: /contact.html
 
 Sitemap: https://advrite.com/sitemap.xml
