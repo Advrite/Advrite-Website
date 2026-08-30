@@ -1,4 +1,11 @@
-/about.html      /about       301
-/services.html   /services    301
-/portfolio.html  /portfolio   301
-/contact.html    /contact     301
+# Permanent 301 Redirects from .html URLs to Clean URLs (force redirect)
+/about.html        /about        301!
+/services.html     /services     301!
+/portfolio.html    /portfolio    301!
+/contact.html      /contact      301!
+
+# Clean URL Rewrites to serve the HTML files internally
+/about             /about.html   200
+/services          /services.html 200
+/portfolio         /portfolio.html 200
+/contact           /contact.html 200
