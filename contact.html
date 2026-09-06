@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
-    <link rel="shortcut icon" href="/favicon.ico">
-    <link rel="icon" type="image/png" href="/favicon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
-    <link rel="icon" type="image/png" sizes="512x512" href="/favicon-512x512.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="manifest" href="/site.webmanifest">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="favicon-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="favicon-512x512.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
 
     <!-- SEO Master Tags -->
     <title>Contact Us | Let's Build Something Iconic | Advrite</title>
@@ -84,53 +84,51 @@
     
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <script>
+        <script>
         tailwind.config = {
-            future: { hoverOnlyWhenSupported: true },
             theme: {
                 extend: {
                     colors: {
-                        brand: { primary: '#48A9E8', hover: '#171719', accentLav: '#FFD600', creativeYellow: '#FFD600' },
-                        ui: { bg: '#FFFFFF', bgLightLav: '#F3F4F4', bgSoftLav: '#D2CFF2', textPrimary: '#161B2D', textSec: '#666680', textBlack: '#050609' }
+                        brand: { primary: '#46B4FA', secondary: '#248CC9', hover: '#081A26', accent: '#FFD43B', accentLav: '#FFD43B', creativeYellow: '#FFD43B' },
+                        ui: { bg: '#FFFFFF', bgLightLav: '#F3F4F4', bgSoftLav: '#D2CFF2', textPrimary: '#081A26', textSec: '#666680', textBlack: '#050609' }
                     },
                     fontFamily: { poppins: ['Poppins', 'sans-serif'], inter: ['Inter', 'sans-serif'] },
                     borderRadius: { 'btn': '20px', 'card': '20px' }
                 }
             }
-        }</script>
+        }
+    </script>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="antialiased selection:bg-[#48A9E8] selection:text-white overflow-x-hidden pt-24 bg-white">
 
-    <!-- Navigation -->
-        <!-- Navigation -->
-        <!-- Navigation -->
-                    <nav id="main-nav" class="fixed top-0 w-full z-50 transition-all duration-300 pointer-events-none bg-white border-b border-black/25">
+            <!-- Navigation -->
+    <nav id="main-nav" class="fixed top-0 w-full z-50 transition-all duration-300 pointer-events-none bg-white border-b border-black/25">
         <div class="container mx-auto px-6 max-w-7xl h-[90px] flex justify-between items-center relative pointer-events-auto">
             <!-- Logo -->
-            <a href="/" class="flex-shrink-0 z-10 lg:-ml-[5%]">
+            <a href="index.html" class="flex-shrink-0 z-10">
                 <img src="assets/logo.svg" alt="Advrite Logo" class="h-[61px]" />
             </a>
             
             <!-- Center Nav Links -->
             <div class="hidden md:flex absolute left-1/2 -translate-x-1/2 items-center gap-12 font-medium text-[15px]">
-                <a href="/" class="text-ui-textPrimary hover:text-[#FFD600] transition-colors duration-300">Home</a>
-                <a href="/about" class="text-ui-textPrimary hover:text-[#FFD600] transition-colors duration-300">About</a>
-                <a href="/services" class="text-ui-textPrimary hover:text-[#FFD600] transition-colors duration-300">Services</a>
-                <a href="/portfolio" class="text-ui-textPrimary hover:text-[#FFD600] transition-colors duration-300">Portfolio</a>
-                <a href="/contact" class="text-brand-primary hover:text-[#FFD600] transition-colors duration-300">Contact</a>
+                <a href="index.html" class="text-ui-textPrimary hover:text-[#FFD43B] transition-colors duration-300">Home</a>
+                <a href="about.html" class="text-ui-textPrimary hover:text-[#FFD43B] transition-colors duration-300">About</a>
+                <a href="services.html" class="text-ui-textPrimary hover:text-[#FFD43B] transition-colors duration-300">Services</a>
+                <a href="portfolio.html" class="text-ui-textPrimary hover:text-[#FFD43B] transition-colors duration-300">Portfolio</a>
+                <a href="contact.html" class="text-brand-primary hover:text-[#FFD43B] transition-colors duration-300">Contact</a>
             </div>
             
             <!-- CTA Right -->
             <div class="hidden md:block flex-shrink-0 z-10">
-                <a href="/contact" class="bg-[#48A9E8] text-white px-7 py-2.5 rounded-full hover:bg-[#FFD600] hover:text-[#14182B] transition-colors duration-300 font-medium text-[15px]">
+                <a href="contact.html" class="bg-[#48A9E8] text-white px-7 py-2.5 rounded-full hover:bg-[#FFD43B] hover:text-[#14182B] transition-colors duration-300 font-medium text-[15px]">
                     Get a Quote
                 </a>
             </div>
 
             <!-- Mobile Menu Toggle -->
             <div class="md:hidden flex items-center z-10">
-                <button id="mobile-menu-btn" class="text-ui-textPrimary hover:text-[#FFD600] p-2 transition-colors duration-300" aria-label="Open menu">
+                <button id="mobile-menu-btn" class="text-ui-textPrimary hover:text-[#FFD43B] p-2 transition-colors duration-300" aria-label="Open menu">
                     <i class="ph ph-list text-3xl"></i>
                 </button>
             </div>
@@ -138,16 +136,16 @@
 
         <!-- Mobile Menu Overlay -->
         <div id="mobile-menu" class="fixed inset-0 bg-white/95 backdrop-blur-lg z-40 hidden flex-col items-center justify-center pt-20 pb-8 px-6 overflow-y-auto h-screen pointer-events-auto">
-            <button id="mobile-menu-close" class="absolute top-6 right-6 text-ui-textPrimary hover:text-[#FFD600] p-2 transition-colors duration-300" aria-label="Close menu">
+            <button id="mobile-menu-close" class="absolute top-6 right-6 text-ui-textPrimary hover:text-[#FFD43B] p-2 transition-colors duration-300" aria-label="Close menu">
                 <i class="ph ph-x text-4xl"></i>
             </button>
             <div class="flex flex-col items-center justify-center space-y-8 w-full">
-                <a href="/" class="mobile-link text-3xl font-medium text-ui-textPrimary hover:text-[#FFD600] transition-colors">Home</a>
-                <a href="/about" class="mobile-link text-3xl font-medium text-ui-textPrimary hover:text-[#FFD600] transition-colors">About</a>
-                <a href="/services" class="mobile-link text-3xl font-medium text-ui-textPrimary hover:text-[#FFD600] transition-colors">Services</a>
-                <a href="/portfolio" class="mobile-link text-3xl font-medium text-ui-textPrimary hover:text-[#FFD600] transition-colors">Portfolio</a>
-                <a href="/contact" class="mobile-link text-3xl font-medium text-brand-primary hover:text-[#FFD600] transition-colors">Contact</a>
-                <a href="/contact" class="mobile-link mt-4 bg-[#48A9E8] text-white px-10 py-4 rounded-full font-bold text-xl hover:bg-[#FFD600] hover:text-[#14182B] transition-colors w-full text-center max-w-[280px]">
+                <a href="index.html" class="mobile-link text-3xl font-medium text-ui-textPrimary hover:text-[#FFD43B] transition-colors">Home</a>
+                <a href="about.html" class="mobile-link text-3xl font-medium text-ui-textPrimary hover:text-[#FFD43B] transition-colors">About</a>
+                <a href="services.html" class="mobile-link text-3xl font-medium text-ui-textPrimary hover:text-[#FFD43B] transition-colors">Services</a>
+                <a href="portfolio.html" class="mobile-link text-3xl font-medium text-ui-textPrimary hover:text-[#FFD43B] transition-colors">Portfolio</a>
+                <a href="contact.html" class="mobile-link text-3xl font-medium text-brand-primary hover:text-[#FFD43B] transition-colors">Contact</a>
+                <a href="contact.html" class="mobile-link mt-4 bg-[#48A9E8] text-white px-10 py-4 rounded-full font-bold text-xl hover:bg-[#FFD43B] hover:text-[#14182B] transition-colors duration-300 w-full text-center max-w-[280px]">
                     Get a Quote
                 </a>
             </div>
@@ -162,14 +160,14 @@
             <div class="container mx-auto px-6 max-w-7xl text-center relative z-10 animate-fade-in-up stagger-1">
                 <h4 class="text-sm font-bold tracking-widest uppercase text-[#48A9E8] mb-6">Let's Work Together</h4>
                 <h1 class="text-[42px] md:text-[56px] font-bold text-ui-textPrimary mb-6 leading-[1.2] font-poppins">
-                    Have a project in <span class="relative inline-block">mind<span class="absolute -bottom-1 left-0 w-full h-1 bg-[#FFD600] rounded-full"></span></span>?
+                    Have a project in <span class="relative inline-block">mind<span class="absolute -bottom-1 left-0 w-full h-1 bg-[#FFD43B] rounded-full"></span></span>?
                 </h1>
                 
                 <p class="text-xl text-ui-textSec leading-relaxed max-w-2xl mx-auto font-medium mb-10">
                     Let's create something meaningful together.
                 </p>
 
-                <a href="#form-container" class="inline-flex items-center gap-2 bg-[#48A9E8] text-white px-8 py-4 rounded-[20px] font-bold text-lg hover:bg-[#FFD600] hover:text-[#14182B] transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-[#FFD600]/30">
+                <a href="#form-container" class="inline-flex items-center gap-2 bg-[#48A9E8] text-white px-8 py-4 rounded-[20px] font-bold text-lg hover:bg-[#FFD43B] hover:text-[#14182B] transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-[#FFD43B]/30">
                     <span>Start a Project &rarr;</span>
                 </a>
             </div>
@@ -187,13 +185,13 @@
                         <div>
                             <h2 class="text-3xl md:text-4xl font-bold text-ui-textPrimary mb-8 font-poppins">Get in touch</h2>
                             <div class="flex flex-col gap-6 text-ui-textPrimary font-medium">
-                                <a href="mailto:hello.advrite@gmail.com" class="flex items-center gap-4 hover:text-[#FFD600] transition-colors group">
+                                <a href="mailto:hello.advrite@gmail.com" class="flex items-center gap-4 hover:text-[#FFD43B] transition-colors group">
                                     <div class="w-12 h-12 rounded-full bg-white shadow-[0_4px_24px_rgb(0,0,0,0.04)] flex items-center justify-center text-[#48A9E8] group-hover:-translate-y-1 transition-transform border border-gray-100">
                                         <i class="ph ph-envelope-simple text-2xl"></i>
                                     </div>
                                     <span class="text-lg">hello.advrite@gmail.com</span>
                                 </a>
-                                <a href="tel:+917012008225" class="flex items-center gap-4 hover:text-[#FFD600] transition-colors group">
+                                <a href="tel:+917012008225" class="flex items-center gap-4 hover:text-[#FFD43B] transition-colors group">
                                     <div class="w-12 h-12 rounded-full bg-white shadow-[0_4px_24px_rgb(0,0,0,0.04)] flex items-center justify-center text-[#48A9E8] group-hover:-translate-y-1 transition-transform border border-gray-100">
                                         <i class="ph ph-phone text-2xl"></i>
                                     </div>
@@ -371,7 +369,7 @@
                                 </div>
                                 
                                 <div class="w-full pt-2">
-                                    <button type="submit" id="submit-btn" class="w-full h-11 bg-[#48A9E8] text-white px-8 rounded-[10px] font-bold text-sm hover:bg-[#FFD600] hover:text-[#14182B] transition-all duration-300 flex items-center justify-center gap-2 hover:shadow-md hover:-translate-y-0.5">
+                                    <button type="submit" id="submit-btn" class="w-full h-11 bg-[#48A9E8] text-white px-8 rounded-[10px] font-bold text-sm hover:bg-[#FFD43B] hover:text-[#14182B] transition-all duration-300 flex items-center justify-center gap-2 hover:shadow-md hover:-translate-y-0.5">
                                         <span>Submit Project Inquiry</span>
                                         <i class="ph ph-paper-plane-tilt text-lg"></i>
                                     </button>
@@ -390,19 +388,19 @@
             <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-8">
                 <!-- Left: Brand -->
                 <div class="flex flex-col items-start">
-                    <a href="/" class="inline-block mb-6">
+                    <a href="index.html" class="inline-block mb-6">
                         <img src="assets/logo.svg" alt="Advrite Logo" loading="lazy" decoding="async" class="h-10 w-auto" />
                     </a>
-                    <p class="text-lg font-bold text-ui-textPrimary mb-8">Creative &bull; Branding &bull; Digital</p>
+                    <p class="text-lg font-bold text-ui-textPrimary mb-8">Creative <span class="opacity-50">|</span> <span class="text-[#46b4fa]">Branding</span> <span class="opacity-50">|</span> <span class="text-[#FFD43B]">Design</span></p>
                     
                     <div class="flex gap-6 text-2xl text-ui-textSec">
-                        <a href="#" class="hover:text-[#FFD600] hover:-translate-y-1 transition-all duration-300" aria-label="Instagram">
+                        <a href="#" class="hover:text-[#FFD43B] hover:-translate-y-1 transition-all duration-300" aria-label="Instagram">
                             <i class="ph ph-instagram-logo"></i>
                         </a>
-                        <a href="#" class="hover:text-[#FFD600] hover:-translate-y-1 transition-all duration-300" aria-label="Behance">
+                        <a href="#" class="hover:text-[#FFD43B] hover:-translate-y-1 transition-all duration-300" aria-label="Behance">
                             <i class="ph ph-behance-logo"></i>
                         </a>
-                        <a href="#" class="hover:text-[#FFD600] hover:-translate-y-1 transition-all duration-300" aria-label="LinkedIn">
+                        <a href="#" class="hover:text-[#FFD43B] hover:-translate-y-1 transition-all duration-300" aria-label="LinkedIn">
                             <i class="ph ph-linkedin-logo"></i>
                         </a>
                     </div>
@@ -413,19 +411,19 @@
                     <h4 class="text-sm font-bold tracking-widest uppercase text-ui-textPrimary mb-6">QUICK LINKS</h4>
                     
                     <div class="flex flex-col w-full max-w-[320px]">
-                        <a href="/about" class="flex justify-between items-center py-4 border-b border-gray-200 text-base font-medium text-ui-textSec hover:text-[#FFD600] transition-colors group">
+                        <a href="about.html" class="flex justify-between items-center py-4 border-b border-gray-200 text-base font-medium text-ui-textSec hover:text-[#FFD43B] transition-colors group">
                             <span>About Us</span>
                             <i class="ph ph-arrow-right text-[#48A9E8] opacity-70 group-hover:opacity-100 group-hover:translate-x-1 transition-all"></i>
                         </a>
-                        <a href="/services" class="flex justify-between items-center py-4 border-b border-gray-200 text-base font-medium text-ui-textSec hover:text-[#FFD600] transition-colors group">
+                        <a href="services.html" class="flex justify-between items-center py-4 border-b border-gray-200 text-base font-medium text-ui-textSec hover:text-[#FFD43B] transition-colors group">
                             <span>Services</span>
                             <i class="ph ph-arrow-right text-[#48A9E8] opacity-70 group-hover:opacity-100 group-hover:translate-x-1 transition-all"></i>
                         </a>
-                        <a href="/portfolio" class="flex justify-between items-center py-4 border-b border-gray-200 text-base font-medium text-ui-textSec hover:text-[#FFD600] transition-colors group">
+                        <a href="portfolio.html" class="flex justify-between items-center py-4 border-b border-gray-200 text-base font-medium text-ui-textSec hover:text-[#FFD43B] transition-colors group">
                             <span>Portfolio</span>
                             <i class="ph ph-arrow-right text-[#48A9E8] opacity-70 group-hover:opacity-100 group-hover:translate-x-1 transition-all"></i>
                         </a>
-                        <a href="/contact" class="flex justify-between items-center py-4 border-b border-gray-200 text-base font-medium text-ui-textSec hover:text-[#FFD600] transition-colors group">
+                        <a href="contact.html" class="flex justify-between items-center py-4 border-b border-gray-200 text-base font-medium text-ui-textSec hover:text-[#FFD43B] transition-colors group">
                             <span>Contact</span>
                             <i class="ph ph-arrow-right text-[#48A9E8] opacity-70 group-hover:opacity-100 group-hover:translate-x-1 transition-all"></i>
                         </a>

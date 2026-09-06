@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
-    <link rel="shortcut icon" href="/favicon.ico">
-    <link rel="icon" type="image/png" href="/favicon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
-    <link rel="icon" type="image/png" sizes="512x512" href="/favicon-512x512.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="manifest" href="/site.webmanifest">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="favicon-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="favicon-512x512.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
 
     <title>Portfolio | Advrite</title>
     <meta name="description" content="Explore selected branding, web design, digital, video, and creative projects by Advrite.">
@@ -54,14 +54,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script>
+        <script>
         tailwind.config = {
-            future: { hoverOnlyWhenSupported: true },
             theme: {
                 extend: {
                     colors: {
-                        brand: { primary: '#48A9E8', hover: '#171719', accentLav: '#FFD600', creativeYellow: '#FFD600' },
-                        ui: { bg: '#FFFFFF', bgLightLav: '#F3F4F4', bgSoftLav: '#D2CFF2', textPrimary: '#161B2D', textSec: '#666680', textBlack: '#050609' }
+                        brand: { primary: '#46B4FA', secondary: '#248CC9', hover: '#081A26', accent: '#FFD43B', accentLav: '#FFD43B', creativeYellow: '#FFD43B' },
+                        ui: { bg: '#FFFFFF', bgLightLav: '#F3F4F4', bgSoftLav: '#D2CFF2', textPrimary: '#081A26', textSec: '#666680', textBlack: '#050609' }
                     },
                     fontFamily: { poppins: ['Poppins', 'sans-serif'], inter: ['Inter', 'sans-serif'] },
                     borderRadius: { 'btn': '20px', 'card': '20px' }
@@ -78,35 +77,33 @@
 </head>
 <body class="antialiased selection:bg-brand-primary selection:text-white overflow-x-hidden pt-24">
 
-    <!-- Navigation -->
-        <!-- Navigation -->
-        <!-- Navigation -->
-                    <nav id="main-nav" class="fixed top-0 w-full z-50 transition-all duration-300 pointer-events-none bg-white border-b border-black/25">
+            <!-- Navigation -->
+    <nav id="main-nav" class="fixed top-0 w-full z-50 transition-all duration-300 pointer-events-none bg-white border-b border-black/25">
         <div class="container mx-auto px-6 max-w-7xl h-[90px] flex justify-between items-center relative pointer-events-auto">
             <!-- Logo -->
-            <a href="/" class="flex-shrink-0 z-10 lg:-ml-[5%]">
+            <a href="index.html" class="flex-shrink-0 z-10">
                 <img src="assets/logo.svg" alt="Advrite Logo" class="h-[61px]" />
             </a>
             
             <!-- Center Nav Links -->
             <div class="hidden md:flex absolute left-1/2 -translate-x-1/2 items-center gap-12 font-medium text-[15px]">
-                <a href="/" class="text-ui-textPrimary hover:text-[#FFD600] transition-colors duration-300">Home</a>
-                <a href="/about" class="text-ui-textPrimary hover:text-[#FFD600] transition-colors duration-300">About</a>
-                <a href="/services" class="text-ui-textPrimary hover:text-[#FFD600] transition-colors duration-300">Services</a>
-                <a href="/portfolio" class="text-brand-primary hover:text-[#FFD600] transition-colors duration-300">Portfolio</a>
-                <a href="/contact" class="text-ui-textPrimary hover:text-[#FFD600] transition-colors duration-300">Contact</a>
+                <a href="index.html" class="text-ui-textPrimary hover:text-[#FFD43B] transition-colors duration-300">Home</a>
+                <a href="about.html" class="text-ui-textPrimary hover:text-[#FFD43B] transition-colors duration-300">About</a>
+                <a href="services.html" class="text-ui-textPrimary hover:text-[#FFD43B] transition-colors duration-300">Services</a>
+                <a href="portfolio.html" class="text-brand-primary hover:text-[#FFD43B] transition-colors duration-300">Portfolio</a>
+                <a href="contact.html" class="text-ui-textPrimary hover:text-[#FFD43B] transition-colors duration-300">Contact</a>
             </div>
             
             <!-- CTA Right -->
             <div class="hidden md:block flex-shrink-0 z-10">
-                <a href="/contact" class="bg-[#48A9E8] text-white px-7 py-2.5 rounded-full hover:bg-[#FFD600] hover:text-[#14182B] transition-colors duration-300 font-medium text-[15px]">
+                <a href="contact.html" class="bg-[#48A9E8] text-white px-7 py-2.5 rounded-full hover:bg-[#FFD43B] hover:text-[#14182B] transition-colors duration-300 font-medium text-[15px]">
                     Get a Quote
                 </a>
             </div>
 
             <!-- Mobile Menu Toggle -->
             <div class="md:hidden flex items-center z-10">
-                <button id="mobile-menu-btn" class="text-ui-textPrimary hover:text-[#FFD600] p-2 transition-colors duration-300" aria-label="Open menu">
+                <button id="mobile-menu-btn" class="text-ui-textPrimary hover:text-[#FFD43B] p-2 transition-colors duration-300" aria-label="Open menu">
                     <i class="ph ph-list text-3xl"></i>
                 </button>
             </div>
@@ -114,16 +111,16 @@
 
         <!-- Mobile Menu Overlay -->
         <div id="mobile-menu" class="fixed inset-0 bg-white/95 backdrop-blur-lg z-40 hidden flex-col items-center justify-center pt-20 pb-8 px-6 overflow-y-auto h-screen pointer-events-auto">
-            <button id="mobile-menu-close" class="absolute top-6 right-6 text-ui-textPrimary hover:text-[#FFD600] p-2 transition-colors duration-300" aria-label="Close menu">
+            <button id="mobile-menu-close" class="absolute top-6 right-6 text-ui-textPrimary hover:text-[#FFD43B] p-2 transition-colors duration-300" aria-label="Close menu">
                 <i class="ph ph-x text-4xl"></i>
             </button>
             <div class="flex flex-col items-center justify-center space-y-8 w-full">
-                <a href="/" class="mobile-link text-3xl font-medium text-ui-textPrimary hover:text-[#FFD600] transition-colors">Home</a>
-                <a href="/about" class="mobile-link text-3xl font-medium text-ui-textPrimary hover:text-[#FFD600] transition-colors">About</a>
-                <a href="/services" class="mobile-link text-3xl font-medium text-ui-textPrimary hover:text-[#FFD600] transition-colors">Services</a>
-                <a href="/portfolio" class="mobile-link text-3xl font-medium text-brand-primary hover:text-[#FFD600] transition-colors">Portfolio</a>
-                <a href="/contact" class="mobile-link text-3xl font-medium text-ui-textPrimary hover:text-[#FFD600] transition-colors">Contact</a>
-                <a href="/contact" class="mobile-link mt-4 bg-[#48A9E8] text-white px-10 py-4 rounded-full font-bold text-xl hover:bg-[#FFD600] hover:text-[#14182B] transition-colors w-full text-center max-w-[280px]">
+                <a href="index.html" class="mobile-link text-3xl font-medium text-ui-textPrimary hover:text-[#FFD43B] transition-colors">Home</a>
+                <a href="about.html" class="mobile-link text-3xl font-medium text-ui-textPrimary hover:text-[#FFD43B] transition-colors">About</a>
+                <a href="services.html" class="mobile-link text-3xl font-medium text-ui-textPrimary hover:text-[#FFD43B] transition-colors">Services</a>
+                <a href="portfolio.html" class="mobile-link text-3xl font-medium text-brand-primary hover:text-[#FFD43B] transition-colors">Portfolio</a>
+                <a href="contact.html" class="mobile-link text-3xl font-medium text-ui-textPrimary hover:text-[#FFD43B] transition-colors">Contact</a>
+                <a href="contact.html" class="mobile-link mt-4 bg-[#48A9E8] text-white px-10 py-4 rounded-full font-bold text-xl hover:bg-[#FFD43B] hover:text-[#14182B] transition-colors duration-300 w-full text-center max-w-[280px]">
                     Get a Quote
                 </a>
             </div>
@@ -144,11 +141,11 @@
                 
                 <!-- Category Filter -->
                 <div class="flex flex-wrap justify-center gap-4" id="portfolio-filters">
-                    <button data-filter="all" class="filter-btn px-6 py-2 rounded-full bg-[#FFD600] text-[#14182B] font-medium text-sm transition-colors">All</button>
-                    <button data-filter="branding" class="filter-btn px-6 py-2 rounded-full bg-white text-[#666680] hover:text-[#FFD600] border border-gray-200 font-medium text-sm transition-colors cursor-pointer">Branding</button>
-                    <button data-filter="graphic-design" class="filter-btn px-6 py-2 rounded-full bg-white text-[#666680] hover:text-[#FFD600] border border-gray-200 font-medium text-sm transition-colors cursor-pointer">Graphic Design</button>
-                    <button data-filter="website" class="filter-btn px-6 py-2 rounded-full bg-white text-[#666680] hover:text-[#FFD600] border border-gray-200 font-medium text-sm transition-colors cursor-pointer">Website</button>
-                    <button data-filter="video-motion" class="filter-btn px-6 py-2 rounded-full bg-white text-[#666680] hover:text-[#FFD600] border border-gray-200 font-medium text-sm transition-colors cursor-pointer">Video / Motion</button>
+                    <button data-filter="all" class="filter-btn px-6 py-2 rounded-full bg-[#FFD43B] text-[#14182B] font-medium text-sm transition-colors">All</button>
+                    <button data-filter="branding" class="filter-btn px-6 py-2 rounded-full bg-white text-[#666680] hover:text-[#FFD43B] border border-gray-200 font-medium text-sm transition-colors cursor-pointer">Branding</button>
+                    <button data-filter="graphic-design" class="filter-btn px-6 py-2 rounded-full bg-white text-[#666680] hover:text-[#FFD43B] border border-gray-200 font-medium text-sm transition-colors cursor-pointer">Graphic Design</button>
+                    <button data-filter="website" class="filter-btn px-6 py-2 rounded-full bg-white text-[#666680] hover:text-[#FFD43B] border border-gray-200 font-medium text-sm transition-colors cursor-pointer">Website</button>
+                    <button data-filter="video-motion" class="filter-btn px-6 py-2 rounded-full bg-white text-[#666680] hover:text-[#FFD43B] border border-gray-200 font-medium text-sm transition-colors cursor-pointer">Video / Motion</button>
                 </div>
             </div>
         </section>
@@ -185,7 +182,7 @@
                         </div>
                         <div class="relative w-full overflow-hidden rounded-[24px] bg-black shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-gray-100">
                             <video id="portfolio-video-3" src="assets/video_1.mp4" muted loop playsinline preload="metadata" class="block w-full h-auto object-cover transition-transform duration-700 ease-out group-hover:scale-[1.03]"></video>
-                            <button type="button" id="portfolio-video-play-3" aria-label="Play video" class="absolute inset-0 flex items-center justify-center bg-[#171A2B]/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10" onclick="playInlineVideo('portfolio-video-3', 'portfolio-video-play-3')">
+                            <button type="button" id="portfolio-video-play-3" aria-label="Play video" class="absolute inset-0 flex items-center justify-center bg-[#081A26]/30 opacity-90 sm:opacity-0 sm:group-hover:opacity-100 transition-opacity duration-300 z-10 cursor-pointer" onclick="playInlineVideo('portfolio-video-3', 'portfolio-video-play-3')">
                                 <div class="w-16 h-16 md:w-20 md:h-20 bg-brand-primary rounded-full flex items-center justify-center text-white shadow-lg transform scale-90 group-hover:scale-100 transition-transform duration-500 ease-out pointer-events-none">
                                     <i class="ph-fill ph-play text-2xl md:text-3xl ml-1"></i>
                                 </div>
@@ -200,7 +197,7 @@
                         </div>
                         <div class="relative w-full overflow-hidden rounded-[24px] bg-black shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-gray-100">
                             <video id="portfolio-video-4" src="assets/video_2.mp4" muted loop playsinline preload="metadata" class="block w-full h-auto object-cover transition-transform duration-700 ease-out group-hover:scale-[1.03]"></video>
-                            <button type="button" id="portfolio-video-play-4" aria-label="Play video" class="absolute inset-0 flex items-center justify-center bg-[#171A2B]/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10" onclick="playInlineVideo('portfolio-video-4', 'portfolio-video-play-4')">
+                            <button type="button" id="portfolio-video-play-4" aria-label="Play video" class="absolute inset-0 flex items-center justify-center bg-[#081A26]/30 opacity-90 sm:opacity-0 sm:group-hover:opacity-100 transition-opacity duration-300 z-10 cursor-pointer" onclick="playInlineVideo('portfolio-video-4', 'portfolio-video-play-4')">
                                 <div class="w-16 h-16 md:w-20 md:h-20 bg-brand-primary rounded-full flex items-center justify-center text-white shadow-lg transform scale-90 group-hover:scale-100 transition-transform duration-500 ease-out pointer-events-none">
                                     <i class="ph-fill ph-play text-2xl md:text-3xl ml-1"></i>
                                 </div>
@@ -214,10 +211,10 @@
         <section class="py-16 md:py-24 bg-[#171719] text-center overflow-hidden">
             <div class="container mx-auto px-6">
                 <h2 class="text-4xl md:text-5xl font-bold mb-6 text-[#FFFFFF]">Have a project in mind?</h2>
-                <p class="text-xl text-[#FFD600] max-w-2xl mx-auto mb-10">
+                <p class="text-xl text-[#FFD43B] max-w-2xl mx-auto mb-10">
                     Let's create something remarkable together.
                 </p>
-                <a href="/contact" class="inline-block bg-[#48A9E8] text-white px-8 py-4 rounded-[20px] btn-text hover:bg-[#FFD600] hover:text-[#14182B] active:bg-[#FFD600] active:text-[#14182B] hover:-translate-y-[2px] active:-translate-y-[2px] hover:shadow-lg hover:shadow-[#48A9E8]/5 active:shadow-lg active:shadow-[#48A9E8]/5 transition-all duration-300 ease-in-out">
+                <a href="contact.html" class="inline-block bg-[#48A9E8] text-white px-8 py-4 rounded-[20px] btn-text hover:bg-[#FFD43B] hover:text-[#14182B] active:bg-[#FFD43B] active:text-[#14182B] hover:-translate-y-[2px] active:-translate-y-[2px] hover:shadow-lg hover:shadow-[#48A9E8]/5 active:shadow-lg active:shadow-[#48A9E8]/5 transition-all duration-300 ease-in-out">
                     Start a Project &rarr;
                 </a>
             </div>
@@ -230,19 +227,19 @@
             <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-8">
                 <!-- Left: Brand -->
                 <div class="flex flex-col items-start">
-                    <a href="/" class="inline-block mb-6">
+                    <a href="index.html" class="inline-block mb-6">
                         <img src="assets/logo.svg" alt="Advrite Logo" loading="lazy" decoding="async" class="h-10 w-auto" />
                     </a>
-                    <p class="text-lg font-bold text-ui-textPrimary mb-8">Creative &bull; Branding &bull; Digital</p>
+                    <p class="text-lg font-bold text-ui-textPrimary mb-8">Creative <span class="opacity-50">|</span> <span class="text-[#46b4fa]">Branding</span> <span class="opacity-50">|</span> <span class="text-[#FFD43B]">Design</span></p>
                     
                     <div class="flex gap-6 text-2xl text-ui-textSec">
-                        <a href="#" class="hover:text-[#FFD600] hover:-translate-y-1 transition-all duration-300" aria-label="Instagram">
+                        <a href="#" class="hover:text-[#FFD43B] hover:-translate-y-1 transition-all duration-300" aria-label="Instagram">
                             <i class="ph ph-instagram-logo"></i>
                         </a>
-                        <a href="#" class="hover:text-[#FFD600] hover:-translate-y-1 transition-all duration-300" aria-label="Behance">
+                        <a href="#" class="hover:text-[#FFD43B] hover:-translate-y-1 transition-all duration-300" aria-label="Behance">
                             <i class="ph ph-behance-logo"></i>
                         </a>
-                        <a href="#" class="hover:text-[#FFD600] hover:-translate-y-1 transition-all duration-300" aria-label="LinkedIn">
+                        <a href="#" class="hover:text-[#FFD43B] hover:-translate-y-1 transition-all duration-300" aria-label="LinkedIn">
                             <i class="ph ph-linkedin-logo"></i>
                         </a>
                     </div>
@@ -253,19 +250,19 @@
                     <h4 class="text-sm font-bold tracking-widest uppercase text-ui-textPrimary mb-6">QUICK LINKS</h4>
                     
                     <div class="flex flex-col w-full max-w-[320px]">
-                        <a href="/about" class="flex justify-between items-center py-4 border-b border-gray-200 text-base font-medium text-ui-textSec hover:text-[#FFD600] transition-colors group">
+                        <a href="about.html" class="flex justify-between items-center py-4 border-b border-gray-200 text-base font-medium text-ui-textSec hover:text-[#FFD43B] transition-colors group">
                             <span>About</span>
                             <i class="ph ph-arrow-right text-[#48A9E8] opacity-70 group-hover:opacity-100 group-hover:translate-x-1 transition-all"></i>
                         </a>
-                        <a href="/services" class="flex justify-between items-center py-4 border-b border-gray-200 text-base font-medium text-ui-textSec hover:text-[#FFD600] transition-colors group">
+                        <a href="services.html" class="flex justify-between items-center py-4 border-b border-gray-200 text-base font-medium text-ui-textSec hover:text-[#FFD43B] transition-colors group">
                             <span>Services</span>
                             <i class="ph ph-arrow-right text-[#48A9E8] opacity-70 group-hover:opacity-100 group-hover:translate-x-1 transition-all"></i>
                         </a>
-                        <a href="/portfolio" class="flex justify-between items-center py-4 border-b border-gray-200 text-base font-medium text-ui-textSec hover:text-[#FFD600] transition-colors group">
+                        <a href="portfolio.html" class="flex justify-between items-center py-4 border-b border-gray-200 text-base font-medium text-ui-textSec hover:text-[#FFD43B] transition-colors group">
                             <span>Portfolio</span>
                             <i class="ph ph-arrow-right text-[#48A9E8] opacity-70 group-hover:opacity-100 group-hover:translate-x-1 transition-all"></i>
                         </a>
-                        <a href="/contact" class="flex justify-between items-center py-4 border-b border-gray-200 text-base font-medium text-ui-textSec hover:text-[#FFD600] transition-colors group">
+                        <a href="contact.html" class="flex justify-between items-center py-4 border-b border-gray-200 text-base font-medium text-ui-textSec hover:text-[#FFD43B] transition-colors group">
                             <span>Contact</span>
                             <i class="ph ph-arrow-right text-[#48A9E8] opacity-70 group-hover:opacity-100 group-hover:translate-x-1 transition-all"></i>
                         </a>
